@@ -1,0 +1,697 @@
+ 	
+ 	<!-- This file needs to be edited by the lab developer to suit
+	the requirements of their lab in particular.-->
+	<!-- Add class="default" to include any element as it is
+	specified in default.html.
+	Do not include class="default" to the elements that you want to
+	edit -->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+	<html>
+	<head>
+	<title></title>
+	</head>
+	
+	<body>
+	<div id="experiment">
+	<!-- The Experiment Document Container-->
+	<!-- The lab Header contains the logo and the name of the lab,
+	usually displayed on the top of the page-->
+	
+	<header class="default" id="experiment-header">
+	<div class="logo" id="experiment-header-logo">
+	<!-- Enclose the logo image of your lab or write it in
+	text-->
+	<img src="../images/logo.jpg"></div>
+	
+	<div class="heading" id="experiment-header-heading">
+	<!-- Write the name of your lab and link it to the home
+	page of your lab (h1 tag is preferred while writing your
+	lab name)-->
+	<a href="../index.html">Unit-Operation-Reaction-Engg.-Process-Control Lab</a>
+	</div><!-- Add any additional element you want to add to the lab
+	header, For example : Help (Enclosing them with suitable
+	div is recommended)-->
+	</header><!-- The lab article is the main content area where all the
+	experiment content sits-->
+	
+	<article id="experiment-article">
+	<!-- The lab article has an header, optional navigational
+	menu, number of sections, an optional sidebar and a closing
+	footer-->
+	
+	<div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+	
+	<header class="heading" id="experiment-article-heading">
+	Reaction kinetic studies in a plug flow reactor
+	</header><!-- Navigation menu is useful to organize the view of
+	multiple sections inside the article-->
+	
+	<nav class="default" id="experiment-article-navigation">
+	<ul id="experiment-article-navigation-menu">
+	<!-- The menu can be dynamically generated to contain
+	the headings of your sections or instead write the
+	menu items of your choice individually enclosedu in
+	&lt;li&gt; tag as shown below-->
+	</ul>
+	</nav><!-- All the sections of your lab or experiment can be
+	enclosed together with a div element as shown below-->
+	
+	<div id="experiment-article-sections">
+	<!-- First section of the article-->
+	<section id="experiment-article-section-1">
+	<div class="icon" id="experiment-article-section-1-icon">
+	<!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg"></div>
+	
+	<div class="heading" id=
+	"experiment-article-section-1-heading">
+	Theory
+	</div>
+	
+	<div class="content" id=
+	"experiment-article-section-1-content">
+	<div class="divContent">
+	<p><!--[if gte mso 9]&gt;&lt;xml&gt;
+	&lt;w:WordDocument&gt;
+	&lt;w:View&gt;Normal&lt;/w:View&gt;
+	&lt;w:Zoom&gt;0&lt;/w:Zoom&gt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+	&lt;/style&gt;
+	&lt;![endif]--></p>
+	
+	<p class="MsoNormal" style="line-height: 150%;">
+	
+	<p style="text-align:center;"> <b style="text-align:center;">Experiment No.9</b><br>
+	<b style="text-align:center;">Reaction kinetic studies in a plug flow reactor</b><br>
+	<b style="text-align:center;">Background and Theory</b><br></p>
+	Tubular reactors are one category of flow reactors. These reactor have continuous inflow
+	and outflow of materias. In the tubular reactor, the feed enters at one end of a cylindrical tube
+	and the product stream leaves at the other end. The long tube and the lack of provision for
+	stirring prevents complete mixing of the fluid in the tube. Hence the properties of the flowing
+	stream will vary from one point to another, namely in both radial and axial directions.<br>
+	
+<img  src="../images/thpf1.png" style="width:645px;height:291px ; position: relative; bottom: -15px; " ><br><br>
+
+	Ideal tubular reactor is referred as a plug flow reactor(PFR). PFRs are frequently referred<br>
+	to as piston flow reactors. The key assumption is that as a plug flows through a tubular reactor ,
+	the fluid is perfectly mixed in the radial direction but not in the axial direction (forwards or
+	backwards). Each plug of differential volume is considered as a separate entity, effectively an
+	infinitesimally small batch reactor, limiting to zero volume. As it flows down the tubular PFR,
+	the residence time (τ) of the plug is a function of its position in the reactor. In the ideal PFR, the
+	residence time distribution is therefore a Dirac delta function(small and tall) with a value equal
+	to τ. The PFR model works well for many fluids: liquids, gases, and slurries. An ideal plug flow
+	reactor has a fixed residence time: Any fluid (plug) that enters the reactor at time t will exit the
+	reactor at time t + τ, where τ is the residence time of the reactor.<br>
+	Residence time in the reactor is equal to the space time if the conditions in the reactor like
+	pressure and temperature are same as those at the entrance. In the ideal tubular reactor, which is
+	called the “plug flow” reactor, specific assumptions are made about the extent of mixing:<br>
+	1. no mixing in the axial direction, i.e., the direction of flow<br>
+	2. complete mixing in the radial direction<br>
+	3. a uniform velocity profile across the radius.<br>
+	The absence of longitudinal mixing is the special characteristics of this type of reactor. It is an
+	assumption at the opposite extreme from the complete mixing assumption of the ideal stirred
+	tank reactor. The validity of the assumptions will depend on the geometry of the reactor and the
+	flow conditions. Deviations, which are frequent but not always important, are of two kinds:<br>
+	1. mixing in longitudinal direction due to vortices and turbulence<br>
+	2. incomplete mixing in radial direction in laminar flow conditions<br>
+	<u>Mass Balance</u><br>
+	Steady state molar balance over small elemental volume ΔV yields<br>
+<img src="../images/equations/eq1.jpg" style="width:327px;height:126px ; position: relative; bottom: -15px; " ><br><br>
+
+	The conversion, X<sub>A</sub>, is defined as:<br>
+	X<sub>A</sub> = (inlet concentration – outlet concentration) / (inlet concentration)<br>
+	Volume of a PFR with given influent flow rate and feed composition to achieve a
+	required conversion may be obtained from the above equation, if the rate equation is known. The
+	3rd term in the above equation may be integrated if the rate equation is known.
+	Rate equation for a given reaction can also be obtained using a PFR.
+	For a single reaction say, A+B
+	C+D
+	Assume the rate equation to be <img src="../images/equations/eq23.PNG" style="width:193px;height:49px ; position: relative; bottom: -15px; " >and a constant density system<br><br>
+	Experiments to be performed with different space times in the reactor with the known ratio of
+	reactant B to A(M) in the inlet. Steady state concentration of A at the reactor outlet may be
+	analyzed for each run.
+	Now equation A after integration with for M>1 , can be written as<br>
+	<img src="../images/equations/eq2.jpg" style="width:428px;height:130px ; position: relative; bottom: -15px; " ><br>
+
+
+	Plotting
+<img src="../images/equations/eq2.jpg" style="width:428px;height:130px ; position: relative; bottom: -20px; " > vs <img src="../images/equations/j1lXitGp.png" style="width:15px;height:28px ; position: relative; bottom: -15px; " ><br><br>
+	yields a straightline passing through origin if the
+	assumed equation is correct. The slope=k.<br>
+	For M=1, the performance equation is<img src="../images/equations/eq3.jpg" style="width:297px;height:115px ; position: relative; bottom: -20px; " ><br>
+	So the plot of<img src="../images/equations/KzKdXIFK.png" style="width:139px;height:69px ; position: relative; bottom: -15px; " >vs <img src="../images/equations/j1lXitGp.png" style="width:15px;height:28px ; position: relative; bottom: -10xpx; " ><br><br>
+	vs
+	yields a straightline passing through origin if the assumed equation is correct. The slope=k.
+	If the data do not fit by a straight line assume different rate equation and proceed as above.<br>
+	<b>Note: For theory on conductivity meter, refer the “Theory Section” for Batch
+	reactor</b>
+	
+	
+	
+	</p>
+	</section>
+
+<section id="experiment-article-section-2">
+	<div class="icon" id="experiment-article-section-2-icon">
+	<!-- Enclose the icon image of your lab.-->
+	 <img src="../images/procedure.jpg" style="padding-left: 20px;"></div>
+	
+	<div class="heading" id=
+	"experiment-article-section-2-heading">
+	Procedure
+	</div>
+	
+	<div class="content" id=
+	"experiment-article-section-2-content">
+	<div class="divContent">
+	
+	
+	
+	
+	<p class="MsoNormal" style="line-height: 150%;">
+	<span lang="EN-IN" style=
+	'font-size: 12pt; line-height: 150%; font-family: "Arial","sans-serif";'>
+	Plug Flow Reactor<br>
+	<b>Aim:</b><br>
+	To determine the rate constant for the saponification of ethyl acetate with NaOH
+	at ambient temperature of 28<sup>0</sup>C using a Plug flow reactor.<br>
+	CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> (A)+ NaOH (B)->
+	CH<sub>3</sub>COONa + C<sub>2</sub>H<sub>5</sub>OH. It is an elementary
+	reaction<br>
+	Ethyl acetate is the limiting reaction<br>
+	<b>Procedure for conducting the experiment:</b><br>
+	1) Note down the concentration of ethyl acetate(EA) and NaOH in stock
+	solution<br>
+	2) Fill the reservoirs with NaOH and ethyl acetate stock solution<br>
+	3) Calculate the volume of the tubular reactor.<br>
+	4) Switch on the pump and allow ethyl acetate to flow into the reactor at
+	certain flowrate and measure the flowrate(vA) using rotameter.<br>
+	5) Set the required temperature to be maintained in the reactor.Switch on the
+	heater to heat the reactor contents to the required temperature .<br>
+	6) Calculate the flowrate of NaOH(
+<img  src= "../images/equations/eq9.PNG" style="width:43px;height:36px;position: relative; bottom: -15px; ">) required to keep the desired value of
+	<img  src= "../images/equations/eq10.PNG" style="width:245px;height:60px;position: relative; bottom: -20px; ">). M may be greater than or equal to one. Calculate the
+	total flowrate (Q).<br><br>
+	7) Adjust the flowrate of NaOH to the calculated value, without changing
+	the EA flowrate.<br>
+	8) Calculate the actual value of M obtained after adjusting the flowrates.
+	9) Calculate the space time using the total flow rate.<br>
+	10) Start the stirrer in the reactor. Close the drain valve completely. Allow
+	the reaction to proceed till steady state is attained, as indicated by
+	constant reading in the conductivity meter.<br>
+	11) Note down the conductivity (in mS/cm) of the reaction mixture in, after
+	steady state is attained. Note: Some conductivity meters may display
+	conductance (mS) not the conductivity(mS/cm) [Refer theory for more
+	information].<br>
+	12) Determine the concentration of unreacted NaOH in the reaction
+	mixture by using the conductivity meter calibration equation.<br>
+	13) Repeat steps (6) to (12) for different EA flowrates .<br>
+	14) Conduct the experiment at different temperatures<br>
+	<h3>Observations and calculations:</h3><br>
+	A -> Ethyl acetate<br>
+	B -> NaOH<br>
+	Strength of Ethyl acetate in stock solution = <img  src= "../images/equations/eq11.PNG" style="width:51px;height:41px;position: relative; bottom: -15px; ">= ------------------------ gmol/L<br><br>
+	Strength of NaOH in stock solution= <img  src= "../images/equations/eq12.PNG" style="width:51px;height:41px;position: relative; bottom: -20px; ">= ------------------------ gmol/L<br><br>
+	Diameter of the tube ,d = -----------------------cm<br>
+	Coil diameter , Dc = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	cm<br>
+	Number of turns= Nt =<br>
+	V = volume of tubular reactor = ( d2/4)×
+	Dc Nt =
+	= -----------------------cm3<br>
+	V =----------------------- L<br>
+	Tabular columns:<br>
+
+<img  src= "../images/prmf1.png" style="width:589px;height:157px;position: relative; bottom: -20px;"><br><br>	
+
+	<h3>Calculations:</h3><br>
+	Calculate the total flow rate Q= <img  src= "../images/equations/eq8.PNG" style="width:43px;height:36px;position: relative; bottom: -15px;">+<img  src= "../images/equations/eq9.PNG" style="width:43px;height:36px;position: relative; bottom: -15px;"> =  LPM<br><br>
+	Calculate the space time , = V/Q = &nbsp;&nbsp; &nbsp;&nbsp;    min<br>
+	
+	
+	Set value of M = 
+<img  src= "../images/equations/eq16.PNG" style="width:254px;height:92px;position: relative; bottom: -15px;"><br><br>
+	Concentartion of ethyl acetate in the feed mixture,<br>
+	<img  src= "../images/equations/eq17.PNG" style="width:254px;height:92px;position: relative; bottom: -15px;"><br><br>
+	C<sub>Ao</sub> = --------------------gmol/L<br>
+	Concentartion of NaOH in the feed mixture,<br>
+	<img  src= "../images/equations/eq18.PNG" style="width:254px;height:92px;position: relative; bottom: -20px;"><br><br>
+	C<sub>Bo</sub> = --------------------gmol/L<br>
+	As the conductivity meter calibration is available only at 28<sup>0</sup>C, the conductivity<br>
+	meter reading obtained at a given temperature of reaction is to be corrected for 28<sup>0</sup>C.<br>
+	Temperature compensation for conductivity meter<br>
+	<img  src= "../images/equations/eq19.PNG" style="width:399px;height:92px;position: relative; bottom: -20px;"><br><br>
+	Where ,<br>
+	Y<sub>T</sub> =conductivity meter reading at any temperature T in mS/cm<br>
+	Y<sub>28</sub> = conductivity meter reading at a temperature of 28<sup>0</sup>C in mS/cm<br>
+	Obtain Y<sub>28</sub> corresponding to measured conductivity meter reading ( YT) using the
+	equation above.<br>
+	Conductivity meter is calibrated for concentrations of NaOH in the reaction mixture at a
+	temperature of 280C.<br>
+	Obtain the Concentration of NaOH at 28<sup>0</sup>C using the calibration equation given below
+	Conductivitymeter calibration equation for 28<sup>0</sup>C.<br>
+	
+<img  src= "../images/equations/eq20.PNG" style="width:383px;height:73px;position: relative; bottom: -20px;"><br><br>
+	Where,<br><br>
+	C<sub>B</sub>= Concentration of NaOH in the reaction mixture at steady state<br><br>
+	Y<sub>28</sub> = Conductivity meter reading for solution, corrected for 280C<br>
+	Concentartion of unreacted NaOH in the reaction mixture at steady state,<br>
+	C<sub>B</sub>=
+	gmol/L (obtained from the conductivity meter calibration
+	graph)<br>
+	Concentartion of ethyl acetate in the reaction mixture at steady state,<br><br>
+	<img  src= "../images/equations/eq21.PNG" style="width:272px;height:49px;position: relative; bottom: -20px;"><br><br>
+	C<sub>A</sub>= --------------------gmol/L<br>
+	Conversion of ethyl acetate, <img  src= "../images/equations/eq22.PNG" style="width:235px;height:77px;position: relative; bottom: -15px;">=<br>
+	
+	(CA/ CAo)=
+	Performance equation for PFR with rate equation of the form <img  src= "../images/equations/eq23.PNG" style="width:193px;height:49px;position: relative; bottom: -15px;"><br><br>
+	for M>1 , can be written as<br>
+
+<img  src= "../images/equations/eq2.jpg" style="width:428px;height:130px;position: relative; bottom: -15px;"><br><br>
+
+	
+	Plotting
+	<img  src= "../images/equations/eq4.jpg" style="width:357px;height:109px;position: relative; bottom: -15px;"> Vs <img  src= "../images/equations/5EnjPfms.png" style="width:55px;height:36px;position: relative; bottom: -15px;"><br><br>
+	yields a straightline passing through<br>
+	origin if the assumed rate equation is correct. The slope=k.<br>
+	For M=1, the performance equation is <img  src= "../images/equations/eq3.jpg" style="width:297px;height:115px;position: relative; bottom: -15px;"><br>
+	So the plot of <img  src= "../images/equations/7CY2qwlP.png" style="width:98px;height:69px;position: relative; bottom: -15px;">
+	vs <img  src= "../images/equations/5EnjPfms.png" style="width:55px;height:36px;position: relative; bottom: -15px;"><br>
+	yields a straight line passing through origin. The slope=k.<br><br>
+	
+<img  src= "../images/prpfr1.PNG" style="width:823px;height:488px"><br><br>
+	Graph for M >1
+
+<img  src= "../images/tab3.png" style="width:491px;height:278px"><br>From the graph we get,<br>
+	
+	Slope = k =..............
+	L/(g mole. min)<br>
+	Similarly the experiment may be performed with different temperatures and the<br>
+	rate constants at these temperatures may be determined.<br>
+	<b>Obtain the rate constant at three or more different temperatures.</b><br>
+	
+<img  src= "../images/pmfr4.png" style="width:394px;height:101px"><br>
+
+	<b>From Arrhenius Equation,</b><br>
+	<br>
+ <img  src= "../images/equations/7KlKX0Ka.png" style="width:121px;height:65px;position: relative; bottom: -15px;"><br>
+	Plot lnk vs 1/T<br>
+	Determine the activation energy (E) and the frequency factor (ko) from the slope and
+	intercept of the above plot.<br>
+	Intercept= lnk<sub>0</sub><br>
+	Slope=-E/R<br>
+	R is the gas constant<br>
+	Frequency factor , ko=min<sup>-1</sup>(litre / gmol)<br>
+	Activation energy= E=
+	
+	J/mol<br>
+	<b>Results:</b><br>
+	The rate constant for the saponification of Ethy acetate with NaOH at a temp of
+	ToC,<br>
+	k = -------------------------------litre/((mol)(min))<br>
+	Discuss and conclude on the temperature dependency of rate constant.<br>
+	The activation energy (E) for the reaction=J/mol<br>
+	The frequency factor (ko)=
+	
+	min<sup>-1</sup>(litre / gmol)<br>
+	
+	
+	
+	
+	</span></p>
+	
+	</section>
+
+	 <section id="experiment-article-section-3">
+                    <div class="icon" id="experiment-article-section-3-icon">
+                    <!-- Enclose the icon image of your lab. -->
+                   <img src="../images/selfevaluation.jpg" style="padding-left:50px;"></div>
+                    <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+
+                    <div class="heading" id=
+                    "experiment-article-section-3-heading">
+                        Self Evaluation
+                    </div><!-- Write the section content inside a paragraph 
+        element, we can also include images with &lt;img&gt; tag -->
+
+                    <div class="content" id=
+                    "experiment-article-section-3-content">
+                        <div class="divQuiz">
+                        
+ <a style="margin-top: 40px;float: left;
+width: auto;
+padding: 5px 15px;
+color: #FFF;
+background-color: #008B8B;
+border: 1px solid #FFF;
+border-radius: 5px;
+text-decoration: none;" href="indexs.html">Self Evaluation</a>   
+                        </div>
+                    </div>
+                </section>
+	<section id="experiment-article-section-4">
+	<div class="icon" id="experiment-article-section-4-icon">
+	<!-- Enclose the icon image of your lab.-->
+	 <img src="../images/simulation.jpg" style="padding-left: 20px;"></div>
+
+	
+	<div class="heading" id=
+	"experiment-article-section-4-heading">
+	Simulator
+	</div>
+	
+	<div class="content" id=
+	"experiment-article-section-4-content">
+	<div class="divContent">
+	<p><a href="../images/videoSim/plug_flow_reactor.zip" multilinks-noscroll="true" target="_blank">Download</a></p>
+	</div>
+	</div>
+	
+	
+	
+	
+	</section>
+	<section id="experiment-article-section-5">
+	<div class="icon" id="experiment-article-section-5-icon">
+	<!-- Enclose the icon image of your lab -->
+	<img src="../images/assignment.jpg" style="padding-left: 20px;"></div>
+	<!-- The heading for the section can be enclosed in a
+	div tag. -->
+	
+	<div class="heading" id=
+	"experiment-article-section-5-heading">
+	Assignment
+	</div><!-- Write the section content inside a paragraph
+	element, You can also include images with &lt;img&gt; tag -->
+	
+	<div class="content" id=
+	"experiment-article-section-5-content">
+	<div class="divContent">
+	<h2 style="color: Red;"><strong style=
+	"text-decoration: underline"><span style=
+	"font-family: arial,helvetica,sans-serif; color: rgb(255, 0, 0);">
+	<span style=
+	"font-size: large;"></span></span></strong></h2>
+	
+	<p>&nbsp;</p>
+	
+	
+	<p><span style=
+	"font-size: medium; font-family: arial,helvetica,sans-serif; color: rgb(0, 0, 0);">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To
+	Assignment<br>
+	1. The following data are obtained in an ideal tubular flow reactor for the gaseous
+	pyrolysis of acetone at 520<sup>0</sup>C and 1 atm. The reaction is CH<sub>3</sub>.CO.CH<sub>3</sub> →
+	CH<sub>2</sub>.CO + CH<sub>4</sub><br>
+<img src="../images/prpfA.PNG" style="width:739px;height:95px ; position: relative; bottom: -15px; " ><br><br><br>
+	
+	The feed consists of pure acetone, and the reactor is a 3.3 cm i.d. pipe of 80 cm length.
+	Consider that the reaction mixture obeys ideal gas law and reaction follows second-order
+	kinetics. Find the reaction velocity constant.
+	</span></p>
+	
+	<p>&nbsp;</p>
+	
+	<p>&nbsp;</p>
+	
+	
+	<p>&nbsp;</p>
+	
+	<p>&nbsp;</p>
+	
+	<p><!-- p { margin-bottom: 0.21cm; } --></p>
+	
+	
+	
+	<p style="margin-bottom: 0cm;">&nbsp;</p>
+	
+	<p><span style=
+	"font-family: arial,helvetica,sans-serif; font-size: medium; color: rgb(0, 0, 0);">
+	<br></span></p>
+	</div>
+	</div>
+	</section><!-- Second section of the article-->
+<section id="experiment-article-section-6">
+	<div class="icon" id="experiment-article-section-6-icon">
+	<!-- Enclose the icon image of your lab.-->
+	 <img src="../images/reference.jpg" style="padding-left: 15px;"></div>
+	
+	<div class="heading" id=
+	"experiment-article-section-6-heading">
+	Reference
+	</div>
+	
+	<div class="content" id=
+	"experiment-article-section-6-content">
+	<div class="divContent">
+	
+	
+	
+	
+	<meta content="text/html; charset=utf-8"
+	http-equiv="Content-Type">
+	<meta content="Word.Document" name="ProgId">
+	<meta content="Microsoft Word 12" name="Generator">
+	<meta content="Microsoft Word 12" name=
+	"Originator">
+	
+	<!--[if gte mso 9]&gt;&lt;xml&gt;
+	&lt;w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+	DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+	LatentStyleCount="267"&gt;
+	&lt;w:LsdException Locked="false" Priority="0" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="Normal" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="heading 1" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" /&gt;
+	&lt;w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 1" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 2" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 3" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 4" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 5" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 6" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 7" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 8" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" Name="toc 9" /&gt;
+	&lt;w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" /&gt;
+	&lt;w:LsdException Locked="false" Priority="10" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="Title" /&gt;
+	&lt;w:LsdException Locked="false" Priority="0" Name="Default Paragraph Font" /&gt;
+	&lt;w:LsdException Locked="false" Priority="11" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="Subtitle" /&gt;
+	&lt;w:LsdException Locked="false" Priority="0" Name="Hyperlink" /&gt;
+	&lt;w:LsdException Locked="false" Priority="22" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="Strong" /&gt;
+	&lt;w:LsdException Locked="false" Priority="20" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="Emphasis" /&gt;
+	&lt;w:LsdException Locked="false" Priority="59" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Table Grid" /&gt;
+	&lt;w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" /&gt;
+	&lt;w:LsdException Locked="false" Priority="1" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="No Spacing" /&gt;
+	&lt;w:LsdException Locked="false" Priority="60" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Light Shading" /&gt;
+	&lt;w:LsdException Locked="false" Priority="61" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Light List" /&gt;
+	&lt;w:LsdException Locked="false" Priority="62" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Light Grid" /&gt;
+	&lt;w:LsdException Locked="false" Priority="63" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Medium Shading 1" /&gt;
+	&lt;w:LsdException Locked="false" Priority="64" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Medium Shading 2" /&gt;
+	&lt;w:LsdException Locked="false" Priority="65" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Medium List 1" /&gt;
+	&lt;w:LsdException Locked="false" Priority="66" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Medium List 2" /&gt;
+	&lt;w:LsdException Locked="false" Priority="67" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Medium Grid 1" /&gt;
+	&lt;w:LsdException Locked="false" Priority="68" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Medium Grid 2" /&gt;
+	&lt;w:LsdException Locked="false" Priority="69" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Medium Grid 3" /&gt;
+	&lt;w:LsdException Locked="false" Priority="70" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Dark List" /&gt;
+	&lt;w:LsdException Locked="false" Priority="71" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Colorful Shading" /&gt;
+	&lt;w:LsdException Locked="false" Priority="72" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Colorful List" /&gt;
+	&lt;w:LsdException Locked="false" Priority="73" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Colorful Grid" /&gt;
+	&lt;w:LsdException Locked="false" Priority="60" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Light Shading Accent 1" /&gt;
+	&lt;w:LsdException Locked="false" Priority="61" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Light List Accent 1" /&gt;
+	&lt;w:LsdException Locked="false" Priority="62" SemiHidden="false"
+	UnhideWhenUsed="false" Name="Light Grid Accent 1" /&gt;
+	&lt;w:LsdException Lockrmat="true" Name="Intense Reference" /&gt;
+	&lt;w:LsdException Locked="false" Priority="33" SemiHidden="false"
+	UnhideWhenUsed="false" QFormat="true" Name="Book Title" /&gt;
+	&lt;w:LsdException Locked="false" Priority="37" Name="Bibliography" /&gt;
+	&lt;w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" /&gt;
+	&lt;/w:LatentStyles&gt;
+	&lt;/xml&gt;&lt;![endif]--></span><style type="text/css">
+	</style><span style="color: rgb(51, 102, 255);"><!--[if gte mso 10]&gt;
+	&lt;style&gt;
+	/* Style Definitions */
+	table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+	&lt;/style&gt;
+	&lt;![endif]--></span> <span style=
+	"background: none repeat scroll 0% 0% yellow;"><span style="color: rgb(51, 102, 255);">
+	<br></span></span>
+	
+	
+	
+	
+	<p>&nbsp; Chemical Reaction Engineering (3rd Edition), Octave Levenspiel, 1999, John Wiley & Sons <br><br>
+Elements of Chemical Reaction Engineering (4th Edition), H. Scott Fogler, 2005, Prentice Hall <br>
+Chemical Reactor Analysis and Design (2nd Edition), Gilbert F. Froment and Kenneth B. Bischoff, 1990, John Wiley & Sons<br> 
+Fundamentals of Chemical Reaction Engineering (1st Edition), Mark E. Davis and Robert J. Davis, 2003, The McGraw-Hill Companies, Inc.<br> 
+MIT Open Courseware Lecture notes in Chemical and biological Reaction Engineering. http://ocw.mit.edu/courses/chemical-engineering/10-37-chemical-and-biological-<br>reaction-engineering-spring-2007/lecture-notes/lec09_03072007_w.pdf</p>
+	</div>
+	</div>
+	</section>
+	<section id="experiment-article-section-7">
+	<div class="icon" id="experiment-article-section-7-icon">
+	<!-- Enclose the icon image of your lab.-->
+	 <img src="../images/video.jpg"></div>
+	
+	<div class="heading" id=
+	"experiment-article-section-7-heading">
+	Video
+	</div>
+	
+	<div class="content" id=
+	"experiment-article-section-7-content">
+	<div class="divContent">
+	
+	<span class="avPlayerContainer">
+	<span style="width:800px;" class="avPlayerSubContainer">
+	
+		<span id="AVPlayerID_de112343" class="avPlayerBlock" style="padding-bottom:8px;">
+			
+<iframe width="800" height="600" src="https://www.youtube.com/embed/reQLrR6JVAA?rel=0" frameborder="0" allowfullscreen></iframe>
+	</span><br>
+
+				<a class="avLightbox" href="#AVPlayerID_de112343" title="Click to view video in a lightbox popup">Dim lights</a>
+				
+				<!--<a class="avDownload" href="../images/videoSim/demo_batch.flv" title="Click to download media">Download</a>
+		
+				Embed <span class="avEmbed" id="embed_AVPlayerID_de112343" title="Click to select"><b>Embed this video on your site</b></span>-->
+Embed<input type="text" name="lastname" value="<iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/reQLrR6JVAA?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>">
+				
+	</span>
+</span>
+	
+<br>		
+	<span class="avPlayerContainer">
+	<span style="width:800px;" class="avPlayerSubContainer">
+	
+		<span id="AVPlayerID_de112343" class="avPlayerBlock" style="padding-bottom:8px;">
+<iframe width="800" height="600" src="https://www.youtube.com/embed/xBVYchEbzGk?rel=0" frameborder="0" allowfullscreen></iframe>			
+
+	</span><br>
+
+				<a class="avLightbox" href="#AVPlayerID_de112343" title="Click to view video in a lightbox popup">Dim lights</a>
+				
+				<!--<a class="avDownload" href="../images/videoSim/demo_batch.flv" title="Click to download media">Download</a>
+		
+				Embed <span class="avEmbed" id="embed_AVPlayerID_de112343" title="Click to select"><b>Embed this video on your site</b></span>-->
+				Embed<input type="text" name="lastname" value="<iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/xBVYchEbzGk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>">
+	</span>
+</span>
+	
+	<p>&nbsp;</p>
+	
+	
+	
+	<p>&nbsp;</p>
+	
+	
+	<h1>&nbsp;</h1>
+	
+	<p style="text-align: center;">&nbsp;</p>
+	
+	<p style="text-align: center;">&nbsp;</p>
+	
+	
+	</div>
+	</div>
+	</section>
+	
+	
+	<section id="experiment-article-section-8">
+	<div class="icon" id="experiment-article-section-8-icon">
+	<!-- Enclose the icon image of your lab. -->
+	<img src="../images/quiz.jpg"></div>
+	<!-- The heading for the section can be enclosed in a
+	div tag. -->
+	
+	<div class="heading" id=
+	"experiment-article-section-8-heading">
+	Quiz
+	</div><!-- Write the section content inside a paragraph
+	element, we can also include images with &lt;img&gt; tag -->
+	
+	<div class="content" id=
+	"experiment-article-section-8-content">
+	
+
+
+
+ <a style="margin-top: 40px;float: left;
+width: auto;
+padding: 5px 15px;
+color: #FFF;
+background-color: #008B8B;
+border: 1px solid #FFF;
+border-radius: 5px;
+text-decoration: none;" href="index1.html">Get Started</a>
+
+<form id="form11" method="post" name="form11">
+	
+	
+	
+	</form><br>
+	
+	</section>
+	
+	
+	
+	</div>
+	</article>
+	</div>
+	</body>
+	</html>

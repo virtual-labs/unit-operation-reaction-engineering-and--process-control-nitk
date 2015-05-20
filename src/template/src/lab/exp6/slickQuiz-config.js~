@@ -1,0 +1,81 @@
+// Setup your quiz text and questions here
+
+// NOTE: pay attention to commas, IE struggles with those bad boys
+
+var quizJSON = {
+    "info": {
+        "name":    "Test Your Knowledge",
+        "main":    "<p></p>",
+        "results": "<h5>Learn More</h5><p>study and take quiz</p>",
+        "level1":  "Jeopardy Ready",
+        "level2":  "Jeopardy Contender",
+        "level3":  "Jeopardy Amateur",
+        "level4":  "Jeopardy Newb",
+        "level5":  "Stay in school, kid..." // no comma here
+    },
+    "questions": [
+         { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Under fluidized condition, pressure drop across the bed ---------------------- with the superficial velocity.?",
+            "a": [
+                {"option": "increases",      "correct": false},
+                {"option": "decreases",     "correct": true},
+                {"option": "	remains constant",      "correct": false}
+               // {"option": "Pitot tube ",      "correct": false}		// no comma here
+            ],
+            "correct": "<p><span>Right answer</span> Ans:remains constant</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,<br>Ans:remains constant</p>" // no comma here
+        },
+        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
+            "q": " For calculation of particle Reynolds number  ---------- is the characteristic dimension used?",
+            "a": [
+                {"option": "		equivalent diameter of the particle",               "correct": false},
+                {"option": "		diameter of the column",   "correct": true},
+               {"option": "none of the above",               "correct": false}	
+               // {"option": "0.2", "correct": false} // no comma here
+            ],
+            "select_any": true,
+            "correct": "<p><span>Right answer</span> Ans:equivalent diameter of the particle</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,<br>Ans:equivalent diameter of the particle</p>" // no comma here
+        },
+        { // Question 3 - Multiple Choice, Multiple True Answers, Select All
+            "q": " 	Minimum fluidization velocity for a fluidized bed system depends on",
+            "a": [
+                {"option": "		size,shape and density of particles alone",           "correct": false},
+                {"option": "		density and viscosity of fluid",                  "correct": false},
+                {"option": "		Both( a) and (b)",  "correct": true}	
+               // {"option": "5",          "correct": false} // no comma here
+            ],
+             "correct": "<p><span>Right answer</span> Ans:Both( a) and (b)</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,<br>Ans:Both( a) and (b)</p>" // no comma here
+        },
+        { // Question 4
+            "q": " The height of a fluidized bed at incipient fluidization is 0.075 m, and the corresponding voidage is 0.38.  If the voidage of the bed increases to 0.5, then the height of the bed would be",
+            "a": [
+                {"option": "		0.058 m",    "correct": true},
+                {"option": "		0.061 m",     "correct": false},
+		 {"option": "		0.075 m",     "correct": false},
+		 {"option": "			0.093 m",     "correct": false}
+		
+		
+               // {"option": "Pressure gauge reading of tank 1 and that of tank 2 are same",      "correct": true}
+                //{"option": "1291",   "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Right answer</span> Ans:0.093 m</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,<br>Ans is:0.093 m</p>"  // no comma here
+        },
+        { // Question 5
+            "q": "For hydraulically smooth pipe, the resistance to flow depends only on the?",
+            "a": [
+                {"option": "flow Reynolds number",    "correct": false},
+                {"option": "relative roughness.",     "correct": false},
+		 {"option": "absolute roughness",  "correct": false},
+                {"option": "Reynolds number and relative roughness.",  "correct": true} 
+
+
+// no comma here
+            ],
+            "correct": "<p><span>Right answer</span> Ans:Reynolds number and relative roughness</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,Ans:Reynolds number and relative roughness</p>"  // no comma here
+        } // no comma here
+    ]
+};

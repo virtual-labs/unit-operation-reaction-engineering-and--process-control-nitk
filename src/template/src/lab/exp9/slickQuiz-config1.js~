@@ -1,0 +1,77 @@
+// Setup your quiz text and questions here
+
+// NOTE: pay attention to commas, IE struggles with those bad boys
+
+var quizJSON = {
+    "info": {
+        "name":    "Test Your Knowledge",
+        "main":    "<p></p>",
+        "results": "<h5>Learn More</h5><p>study and take quiz</p>",
+        "level1":  "Jeopardy Ready",
+        "level2":  "Jeopardy Contender",
+        "level3":  "Jeopardy Amateur",
+        "level4":  "Jeopardy Newb",
+        "level5":  "Stay in school, kid..." // no comma here
+    },
+    "questions": [
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": " For a plug flow reactor?",
+            "a": [
+                {"option": "axial diffusivity is infinite, radial diffusivity is zero",      "correct": false},
+                {"option": "axial diffusivity is zero, radial diffusivity is zero",     "correct": false},
+                {"option": "axial diffusivity is zero, radial diffusivity is infinite",      "correct": true},
+                {"option": "axial diffusivity is infinite, radial diffusivity is infinite",     "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Right answer</span> Ans:f = 16/ Re</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,Ans:f = 16/ Re</p>" // no comma here
+        },
+        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
+            "q": "A “space time” of 5 minutes means?",
+            "a": [
+                {"option": "		100% conversion of the reactant is achieved in 5 minutes",               "correct": false},
+                {"option": "One reactor volume of feed at specified conditions is processed in 5 minutes.",   "correct": true},
+                {"option": "5% conversion is achieved in one minute",               "correct": false},
+              {"option": "		none of these", "correct": true} // no comma here
+            ],
+            "select_any": true,
+            "correct": "<p><span>Right answer</span> Ans:greater than that for a smooth pipe</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,Ans:greater than that for a smooth pipe</p>" // no comma here
+        },
+        { // Question 3 - Multiple Choice, Multiple True Answers, Select All
+            "q": "For a tubular reactor with space time τ  and residence time τ  , the following statement holds",
+            "a": [
+                {"option": "		τ and θ always equal,",           "correct": false},
+                {"option": "		τ = θ when the fluid density changes in the reactor",                  "correct": false},
+                {"option": "		τ = θ for an isothermal tubular reactor in which the density of the process fluid is constant",  "correct": true},
+                {"option": "τ = θ for a non-isothermal reactor",          "correct": false} // no comma here
+            ],
+             "correct": "<p><span>Right answer</span> Ans:		τ = θ for an isothermal tubular reactor in which the density of the process fluid is constant</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,Ans:		τ = θ for an isothermal tubular reactor in which the density of the process fluid is constant</p>" // no comma here
+        },
+        { // Question 4
+            "q": "Two identical pressure gauges at the foot of two storage tanks that are at the same elevation, the water levels in the tanks are the same, one tank holds 1,00,000 litre (tank 1), the other holds 1000 litre (tank 1),. Say which one is true?",
+            "a": [
+                {"option": "Pressure gauge reading of tank 1 is greater than that of tank 2",    "correct": false},
+                {"option": "Pressure gauge reading of tank 2 is greater than that of tank 1",     "correct": false},
+                {"option": "Pressure gauge reading of tank 1 and that of tank 2 are same",      "correct": true}
+               // {"option": "1291",   "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Right answer</span> Ans:Pressure gauge reading of tank 1 and that of tank 2 are same</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,Ans:Pressure gauge reading of tank 1 and that of tank 2 are same</p>"  // no comma here
+        },
+        { // Question 5
+            "q": "For hydraulically smooth pipe, the resistance to flow depends only on the?",
+            "a": [
+                {"option": "flow Reynolds number",    "correct": false},
+                {"option": "relative roughness.",     "correct": false},
+		 {"option": "absolute roughness",  "correct": false},
+                {"option": "Reynolds number and relative roughness.",  "correct": true} 
+
+
+// no comma here
+            ],
+            "correct": "<p><span>Right answer</span> Ans:Reynolds number and relative roughness</p>",
+            "incorrect": "<p><span>wrong</span> It's wrong,Ans:Reynolds number and relative roughness</p>"  // no comma here
+        } // no comma here
+    ]
+};
