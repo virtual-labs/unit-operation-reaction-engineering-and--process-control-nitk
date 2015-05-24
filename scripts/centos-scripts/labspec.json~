@@ -18,17 +18,32 @@
         }, 
         "description": {
             "developer": [
-               
                 {
                     "contact": {
                         "alternate_email": "", 
-                        "email": "tahiliani@nitk.edu.in", 
+                        "email": "tahiliani.nitk@gmail.com", 
                         "mobile_number": "", 
                         "office_number": ""
                     }, 
                     "department": "", 
                     "institute": "NITK Surathkal", 
-                    "name": "Mohit Tahiliani", 
+                    "name": "Mohit tahiliani", 
+                    "organization": "", 
+                    "role": "Lab Developer", 
+                    "title": "", 
+                    "web": ""
+                }, 
+       
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "tahiliani.nitk@gmail.com", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "NITK Surathkal", 
+                    "name": "Mohit tahiliani", 
                     "organization": "", 
                     "role": "Lab RA", 
                     "title": "", 
@@ -36,11 +51,11 @@
                 }
             ], 
             "discipline": [
-                "CIVIL"
+                "Unit-Operation-Reaction-Engg.-Process-Control"
             ], 
-            "id": "FluidMechanics", 
+            "id": "che01", 
             "integration_level": 5, 
-            "name": "Computer Programming", 
+            "name": " Chemical", 
             "server-side": true, 
             "status": "Released", 
             "type": ""
