@@ -2,7 +2,7 @@
 # backup Script for Unit Operation,Reaction Engg. & Process Control Lab
 
 # backup Script takes the backup of the data used by the lab.
-# Since there is no data being used by Computer Programming Lab, 
+# Since there is no data being used by Unit Operation,Reaction Engg. & Process Control Lab, 
 # the script does nothing. 
 
 # Usage of the script
