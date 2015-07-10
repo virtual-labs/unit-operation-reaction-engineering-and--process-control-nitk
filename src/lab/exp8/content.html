@@ -117,16 +117,16 @@ residence time and rate of reaction. The ideal CSTR model is often used to
 simplify engineering calculations and can be used to describe research
 reactors. In practice it can only be approached, in particular in industrial
 size reactors.</br></br>
-Space time(τ) is the time required to process one reactor volume of feed at
+Space time(<img src="../images/CodeCogsEqn146.gif"></img>) is the time required to process one reactor volume of feed at
 specified condition.</br></br>
-τ =V/volumetric flow rate of feed
+<img src="../images/CodeCogsEqn146.gif"></img> =V/volumetric flow rate of feed
 </div>
 <div>
 </br>
 <b>MASS BALANCE EQUATION</b></br>
 rate of input - rate of output- rate of disappearance = rate of accumulation
 </br></br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>F</mi><mrow><mi>j</mi><mn>0</mn></mrow></msub><mo>-</mo><msub><mi>F</mi><mi>j</mi></msub><mo>+</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mi>V</mi></msubsup><msub><mi>r</mi><mi>j</mi></msub><mo>&#160;</mo><mi>d</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mi>d</mi><msub><mi>N</mi><mi>j</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></math>
+<img src="../images/CodeCogsEqn107.gif"></img>
 </br></br>
 There are some basic assumptions made in analyzing CSTR reactors.
 These are</br>
@@ -139,38 +139,38 @@ the reactor.</li>
 </ul> 
 
 Since steady state is assumed, the dNj/dt term is equal to zero. Setting the
-rate term equal to a <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><msub><mi>r</mi><mi>j</mi></msub></math>, the equation can now be solved for the volume to
+rate term equal to a -r<sub>j</sub>, the equation can now be solved for the volume to
 yield</br></br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><mfrac><mrow><msub><mi>F</mi><mrow><mi>j</mi><mn>0</mn></mrow></msub><mo>-</mo><msub><mi>F</mi><mi>j</mi></msub></mrow><mrow><mo>-</mo><msub><mi>r</mi><mi>j</mi></msub></mrow></mfrac></math></br></br>
+<img src="../images/CodeCogsEqn117.gif"></img></br></br>
 
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>F</mi><mrow><mi>j</mi><mn>0</mn></mrow></msub></math> molar flowrate of reactant j</br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>F</mi><mi>j</mi></msub></math> :-output molar flowrate of reactant j</br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>r</mi><mi>j</mi></msub></math> :-rate of reaction of reactant molecule j</br>
+F<sub>j0</sub> molar flowrate of reactant j</br>
+F<sub>j</sub> :-output molar flowrate of reactant j</br>
+r<sub>j</sub>:-rate of reaction of reactant molecule j</br>
 V :-volume of the reactor</br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>N</mi><mi>j</mi></msub></math> :-number</br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>F</mi><mrow><mi>i</mi><mn>0</mn></mrow></msub></math>
+N<sub>j</sub> :-number</br>
+F<sub>i0</sub>
 of moles of component j:- the molar flow rate can be expressed as the product of the
-concentration of the species and the volumetric flow rate (<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>V</mi><mn>0</mn></msub></math>).</br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>F</mi><mrow><mi>j</mi><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>C</mi><mrow><mi>j</mi><mn>0</mn></mrow></msub><msub><mi>V</mi><mn>0</mn></msub></math></br>
+concentration of the species and the volumetric flow rate (V<sub>0</sub>).</br>
+F<sub>j0</sub>=C<sub>j0</sub>*v<sub>0</sub></br>
 The design equation for CSTR is given by</br></br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>&#964;</mi><msub><mi>C</mi><mrow><mi>A</mi><mn>0</mn></mrow></msub></mfrac><mo>=</mo><mfrac><mi>v</mi><msub><mi>F</mi><mrow><mi>A</mi><mn>0</mn></mrow></msub></mfrac><mo>=</mo><mfrac><msub><mi>X</mi><mi>A</mi></msub><mrow><mo>-</mo><msub><mi>r</mi><mi>A</mi></msub></mrow></mfrac></math>------(A)</br>
+<img src="../images/CodeCogsEqn118.gif"></img>------(A)</br>
 </br></div>
 <div style="text-indent: 30px;">
 Volume of a CSTR with given influent flow rate and feed composition
 to achieve a required conversion may be obtained from the above
-equation, if the rate equation is known. –rA in the above equation
+equation, if the rate equation is known. -rA in the above equation
 correspond to the exit conversion or concentration.
 Rate equation for a given reaction can be obtained using a CSTR.
 For a single reaction say, A+B-->C+D</br>
-Assume the rate equation to be –rA= k CACB and a constant density system
+Assume the rate equation to be <img src="../images/CodeCogsEqn134.gif"></img> and a constant density system
 Experiments to be performed with different space times in the reactor with
 the known ratio of reactant B to A(M) in the inlet. Steady state
 concentration of A may be analysed for each run.</br></br>
 Now equation A can be written as</br></br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>&#964;</mi><msub><mi>C</mi><mrow><mi>A</mi><mn>0</mn></mrow></msub></mfrac><mo>=</mo><mfrac><msub><mi>X</mi><mi>A</mi></msub><mrow><mi>k</mi><msub><mi>C</mi><mrow><mi>A</mi><mn>0</mn></mrow></msub><mo>(</mo><mn>1</mn><mo>-</mo><msub><mi>X</mi><mi>A</mi></msub><mo>)</mo><mo>(</mo><mi>M</mi><mo>-</mo><msub><mi>X</mi><mi>A</mi></msub><mo>)</mo></mrow></mfrac></math>------(B)</br></br>
+<img src="../images/CodeCogsEqn119.gif"></img>------(B)</br></br>
 for MFR </br> </br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><msub><mi>X</mi><mi>A</mi></msub><mrow><mo>(</mo><mn>1</mn><mo>-</mo><msub><mi>X</mi><mi>A</mi></msub><mo>)</mo><mo>(</mo><mi>M</mi><mo>-</mo><msub><mi>X</mi><mi>A</mi></msub><mo>)</mo></mrow></mfrac></math> Plotting 
-vs <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#964;</mi></math> yields a straightline passing through origin if
+<img src="../images/CodeCogsEqn120.gif"></img> Plotting 
+vs <img src="../images/CodeCogsEqn146.gif"></img> yields a straightline passing through origin if
 the assumed equation is correct. The slope=k. The equation holds good for
 M=1 or greater than 1.</br>
 
@@ -222,50 +222,11 @@ saponification of ethyl acetate with NaOH at different temperatures using a mixe
 flow reactor(continuous stirred tank reactor). Also calculate the frequency factor
 and activation energy for the reaction. Discuss on temperature dependency of rate
 constant</br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mtext>C</mtext>
-  <msub>
-    <mtext>H</mtext>
-    <mn>3</mn>
-  </msub>
-  <mtext>COO</mtext>
-  <msub>
-    <mtext>C</mtext>
-    <mn>2</mn>
-  </msub>
-  <msub>
-    <mtext>H</mtext>
-    <mn>5</mn>
-  </msub>
-  <mo>(</mo>
-  <mtext>A</mtext>
-  <mo>)</mo>
-  <mo>+</mo>
-  <mtext>NaOH</mtext>
-  <mo>(</mo>
-  <mtext>B</mtext>
-  <mo>)</mo>
-  <mo>
-    &#x2192;
-    <!--rarr, RightArrow, ShortRightArrow, srarr, rightarrow-->
-  </mo>
-  <mtext>C</mtext>
-  <msub>
-    <mtext>H</mtext>
-    <mn>3</mn>
-  </msub>
-  <mtext>COONa</mtext>
-  <mo>+</mo>
-  <msub>
-    <mtext>C</mtext>
-    <mn>2</mn>
-  </msub>
-  <msub>
-    <mtext>H</mtext>
-    <mn>5</mn>
-  </msub>
-  <mtext>OH</mtext>
-</math>
+
+
+CH<sub>3</sub>COOC<sub>2</sub>H<sub>5</sub> (A)+ NaOH (B) ->CH<sub>3</sub>COONa + C<sub>2</sub>H<sub>5</sub>OH
+
+
  It is an elementary reaction</br>
 Ethyl acetate is the limiting reactant</br>
 Apparatus: conductivity meter</br>
@@ -275,15 +236,15 @@ Procedure:</br>
 3.Fill the reservoirs with NaOH and ethyl acetate stock solutions</br>
 4.Measure the volume of the reactor.</br>
 5.Switch on the pump and allow ethyl acetate to flow into the reactor at certain
-flowrate and measure the flowrate(<img src="../images/equations/eq8.PNG" style="width:50px;height:25px;">) using rotameter.</br>
-
+flowrate and measure the flowrate(<img src="../images/equations/eq8.PNG" style="width:50px;height:25px;position: relative; bottom: -15px; ">) using rotameter.</br>
+</br>
 
 
 
 6. Set the required temperature to be maintained in the reactor.Switch on the
 heater to heat the reactor contents to the required temperature .</br>
-7. Calculate the flowrate of NaOH(<img src="../images/equations/eq9.PNG" style="width:30px;height:20px;">) required to keep the desired value of
-<img src="../images/equations/eq10.PNG" style="width:120px;height:30px;">. M may be greater than or equal to one. Calculate the total
+7. Calculate the flowrate of NaOH(<img src="../images/equations/eq9.PNG" style="width:43px;height:36px;position: relative; bottom: -15px; " >) required to keep the desired value of
+<img src="../images/equations/eq10.PNG" style="width:200px;height:56px;position: relative; bottom: -15px; ">. M may be greater than or equal to one. Calculate the total
 flowrate (Q).</br>
 8. Adjust the flowrate of NaOH to the calculated value, without changing the
 EA flowrate.</br>
@@ -300,15 +261,15 @@ information].</br>
 using the conductivity meter calibration equation.</br>
 14. Repeat steps (6) to (12) for different EA flowrates .</br>
 15. Conduct the experiment at different temperatures</br>
-Observations and calculations:
-Aà Ethyl acetate
-B àNaOH
+Observations and calculations:<br>
+Aà Ethyl acetate<br>
+B àNaOH<br>
 Strength of Ethyl acetate in stock = <img src="../images/equations/eq11.PNG" style="width:35px;height:20px;"> = ------------------------ gmol/L</br></br>
 Strength of NaOH in stock solution=<img src="../images/equations/eq12.PNG" style="width:35px;height:25px;">= ------------------------ gmol/L</br></br>
 Diameter of the reaction vessel, d = -----------------------cm</br></br>
 Height of the vessel upto reactor outlet, h = -----------------------cm</br></br>
 V = volume of teh reactor=<img src="../images/equations/eq13.PNG" style="width:65px;height:30px;">=
-= -----------------------cm3</br>
+= -----------------------cm<sup>3</sup></br>
 =     L<br>
 
 <img  src= "../images/prmf1.png" style="width:589px;height:158px"></br></br>
@@ -316,53 +277,53 @@ V = volume of teh reactor=<img src="../images/equations/eq13.PNG" style="width:6
 <img  src= "../images/prmf2.png" style="width:964px;height:200px"></br></br>
 <b>Calculations:</b><br>
 Ethyl acetate flow rate = <img src="../images/equations/eq8.PNG" style="width:45px;height:20px;">= ------------------------------LPH</br>
-VB/VA = M(CAS/CBS)
-Flow rate of NaOH required to keep the desired M ,<img src="../images/equations/eq15.PNG" style="width:150px;height:35px;"></br>
+V<sub>B</sub>/V<sub>A</sub> = M(C<sub>AS</sub>/C<sub>BS</sub>)
+Flow rate of NaOH required to keep the desired M ,<img src="../images/equations/eq15.PNG" style="width:200px;height:45px;"></br>
 Flow rate of NaOH set, =
 LPH
-Total flow rate Q= VA+VB =
+Total flow rate Q= V<sub>A</sub>+V<sub>B</sub> =
 Space time , = V/Q =
 min
-Actual value of M(obtained in the experiment) = <img src="../images/equations/eq16.PNG" style="width:155px;height:40px;"></br>
+Actual value of M(obtained in the experiment) = <img src="../images/equations/eq16.PNG" style="width:200px;height:45px;"></br>
 =
 Initial concentartion of ethyl acetate in the feed mixture,</br>
- <img src="../images/equations/eq17.PNG" style="width:150px;height:35px;"></br>
-CAo = --------------------gmol/L</br>
+ <img src="../images/equations/eq17.PNG" style="width:200px;height:45px;"></br>
+C<sub>Ao</sub> = --------------------gmol/L</br>
 Concentartion of NaOH in the feed mixture,</br>
-CBO = (VB*CBS)/Q
-CBO = --------------------gmol/L</br>
-As the conductivity meter calibration is available only at 280C, the conductivity</br>
-meter reading obtained at a given temperature of reaction is to be corrected for 280C.</br>
+C<sub>Bo</sub> = (V<sub>B</sub>*C<sub>BS</sub>)/Q
+C<sub>Bo</sub> = --------------------gmol/L</br>
+As the conductivity meter calibration is available only at 28<sup>0</sup>C, the conductivity</br>
+meter reading obtained at a given temperature of reaction is to be corrected for 28<sup>0</sup>C.</br>
 Temperature compensation for conductivity meter</br>
 
- <img src="../images/equations/eq19.PNG" style="width:180px;height:35px;"></br>
+ <img src="../images/equations/eq19.PNG" style="width:300px;height:55px;"></br>
 Where ,</br>
-YT =conductivity meter reading at any temperature T in mS/cm</br>
+Y<sub>T</sub> =conductivity meter reading at any temperature T in mS/cm</br>
 
- <img src="../images/equations/eq24.PNG" style="width:35px;height:20px;">= conductivity meter reading at a temperature of 280C in mS/cm</br>
+ <img src="../images/equations/eq24.PNG" style="width:35px;height:20px;">= conductivity meter reading at a temperature of 28<sup>0</sup>C in mS/cm</br>
 Obtain 
- <img src="../images/equations/eq24.PNG" style="width:35px;height:20px;"> corresponding to measured conductivity meter reading ( YT) using the
+ <img src="../images/equations/eq24.PNG" style="width:35px;height:20px;"> corresponding to measured conductivity meter reading ( Y<sub>T</sub>) using the
 equation above.</br>
 Conductivity meter is calibrated for concentrations of NaOH in the reaction mixture at a
-temperature of 280C.
-Obtain the Concentration of NaOH at 280C using the calibration equation given below</br>
-Conductivitymeter calibration equation for 280C.</br>
+temperature of 28<sup>0</sup>C.
+Obtain the Concentration of NaOH at 28<sup>0</sup>C using the calibration equation given below</br>
+Conductivitymeter calibration equation for 28<sup>0</sup>C.</br>
 
- <img src="../images/equations/eq20.PNG" style="width:185px;height:40px;"><br>
+ <img src="../images/equations/eq20.PNG" style="width:305px;height:40px;"><br>
 Where,<br>
 
- <img src="../images/equations/eq25.PNG" style="width:27px;height:20px;">= Concentration of NaOH in the reaction mixture at steady state
-Y28 = Conductivity meter reading for solution, corrected for 280C
-Concentartion of unreacted NaOH in the reaction mixture at steady state,
-CB=
+ <img src="../images/equations/eq25.PNG" style="width:27px;height:20px;">= Concentration of NaOH in the reaction mixture at steady state<br>
+Y<sub>28</sub> = Conductivity meter reading for solution, corrected for 28<sup>0</sup>C<br>
+Concentartion of unreacted NaOH in the reaction mixture at steady state,<br>
+C<sub>B</sub>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 gmol/L (obtained from the conductivity meter calibration
 graph)</br>
 Concentartion of ethyl acetate in the reaction mixture at steady state,</br></br>
 
- <img src="../images/equations/eq21.PNG" style="width:167px;height:30px;"></br>
+ <img src="../images/equations/eq21.PNG" style="width:207px;height:30px;"></br>
 
  <img src="../images/equations/eq26.PNG" style="width:40px;height:20px;">= --------------------gmol/L<br>
-Conversion of ethyl acetate,  <img src="../images/equations/eq22.PNG" style="width:150px;height:35px;"><br>
+Conversion of ethyl acetate,  <img src="../images/equations/eq22.PNG" style="width:200px;height:45px;"><br>
 
 
 Performance equation for MFR with rate equation of the form  <img src="../images/equations/eq23.PNG" style="width:140px;height:30px;"><br>
@@ -378,44 +339,8 @@ Plotting
 vs
 yields a straightline passing through origin. The
 slope=k . The equation holds good for M=1 or greater than 1.
-Plot a graph of ns  = 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mfrac>
-    <msub>
-      <mtext>X</mtext>
-      <mtext>A</mtext>
-    </msub>
-    <mrow>
-      <mo>(</mo>
-      <mo>(</mo>
-      <mn>1</mn>
-      <mo>-</mo>
-      <msub>
-        <mtext>X</mtext>
-        <mtext>A</mtext>
-      </msub>
-      <mo>)</mo>
-      <mo>(</mo>
-      <mtext>M</mtext>
-      <mo>-</mo>
-      <msub>
-        <mtext>X</mtext>
-        <mtext>A</mtext>
-      </msub>
-      <mo>)</mo>
-      <mo>)</mo>
-      <msub>
-        <mtext>V</mtext>
-        <mi>s</mi>
-      </msub>
-      <msub>
-        <mtext>C</mtext>
-        <mtext>A0</mtext>
-      </msub>
-      <mtext>&#x3c4;</mtext>
-    </mrow>
-  </mfrac>
-</math><br>
+Plot a graph of  <img src="../images/CodeCogsEqn120.gif"></img> Vs &nbsp;C<sub>Ao</sub>T
+<br>
 
 
 
@@ -424,71 +349,30 @@ Plot a graph of ns  =
 From the graph get,
 k = -------------------------------litre/((gmol)(min))
 Similarly the experiment may be performed with different temperatures and the
-rate constants at these temperatures may be determined.
+rate constants at these temperatures may be determined.</br>
 Obtain the rate constant at three or more different temperatures.</br>
 
 <img  src= "../images/pmfr4.png" style="width:394px;height:101px"></br>
-From Arrhenius Equation,
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>k</mi>
-  <mo>=</mo>
-  <msub>
-    <mi>k</mi>
-    <mn>0</mn>
-  </msub>
-  <msup>
-    <mi>e</mi>
-    <mrow>
-      <mo>(</mo>
-      <mfrac>
-        <mrow>
-          <mo>-</mo>
-          <mtext>E</mtext>
-        </mrow>
-        <mtext>RT</mtext>
-      </mfrac>
-      <mo>)</mo>
-    </mrow>
-  </msup>
-</math><br>
-Plot
-
-lnk vs 1/T
+<b>From Arrhenius Equation,</b><br>
+ <img src="../images/CodeCogsEqn106.gif"></img><br>
+Plot lnk vs 1/T<br>
 Determine the activation energy (E) and the frequency factor (ko) from the slope and<br>
 intercept of the above plot.<br>
-Intercept= lnk0
-Slope=-E/R
-R is the gas constant
-Frequency factor , ko=<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msup>
-    <mrow>
-      <mi>m</mi>
-      <mi>i</mi>
-      <mi>n</mi>
-    </mrow><mrow> <mo>-</mo> <mn>1</mn>  </mrow></msup> <mo>(</mo><mfrac bevelled="true"><mrow> <mi>l</mi><mi>i</mi> <mi>t</mi><mi>r</mi><mi>e</mi></mrow> <mrow><mi>g</mi><mi>m</mi>
-      <mi>o</mi> <mi>l</mi>
-    </mrow> </mfrac> <mo>)</mo>
-</math><br>
+Intercept= lnk0<br>
+Slope=-E/R<br>
+R is the gas constant<br>
+Frequency factor , ko=min<sup>-1</sup>(litre / gmol)<br>
 Activation energy= E=J/mol<br>
 
 
-Results:
+<b>Results:</b><br>
 The rate constant for the saponification of Ethy acetate with NaOH at a temp of
 ToC,
 k = -------------------------------litre/((mol)(min))
 Discuss and conclude on the temperature dependency of rate constant.
 The activation energy (E) for the reaction=J/mol<br>
-The frequency factor (ko)=
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msup>
-    <mrow>
-      <mi>m</mi>
-      <mi>i</mi>
-      <mi>n</mi>
-    </mrow><mrow> <mo>-</mo> <mn>1</mn>  </mrow></msup> <mo>(</mo><mfrac bevelled="true"><mrow> <mi>l</mi><mi>i</mi> <mi>t</mi><mi>r</mi><mi>e</mi></mrow> <mrow><mi>g</mi><mi>m</mi>
-      <mi>o</mi> <mi>l</mi>
-    </mrow> </mfrac> <mo>)</mo>
-</math>
+The frequency factor (ko)=min<sup>-1</sup>(litre / gmol)
+
 
                      </span></p>
 
@@ -564,8 +448,7 @@ The frequency factor (ko)=
                             "font-size: large;"></span></span></strong></h2>
 
                             <p>&nbsp;1. A liquid phase reaction is to be carried out in a suitable reactor. The stoichiometry of the
-reaction is A
-→ R. The feed concentraion is 0.90 mol A/liter
+reaction is A-> R. The feed concentraion is 0.90 mol A/liter
 and is available at a rate of 100
 mol A/min. The following reactors may be considered for choice.<br><br>
 a) Mixed flow reactor.<br><br>
@@ -606,7 +489,7 @@ mol A/lit.</td><td>0.1
 
 
 2. The liquid phase reaction A
-→ R + S follows first
+-> R + S follows first
 -
 order kinetics with a reaction velocity
 constant of 0.80 k sec<sup>-1</sup>

@@ -108,14 +108,14 @@
 	the fluid is perfectly mixed in the radial direction but not in the axial direction (forwards or
 	backwards). Each plug of differential volume is considered as a separate entity, effectively an
 	infinitesimally small batch reactor, limiting to zero volume. As it flows down the tubular PFR,
-	the residence time (τ) of the plug is a function of its position in the reactor. In the ideal PFR, the
+	the residence time (<img src="../images/CodeCogsEqn146.gif"></img>) of the plug is a function of its position in the reactor. In the ideal PFR, the
 	residence time distribution is therefore a Dirac delta function(small and tall) with a value equal
 	to τ. The PFR model works well for many fluids: liquids, gases, and slurries. An ideal plug flow
 	reactor has a fixed residence time: Any fluid (plug) that enters the reactor at time t will exit the
-	reactor at time t + τ, where τ is the residence time of the reactor.<br>
+	reactor at time t + <img src="../images/CodeCogsEqn146.gif"></img>, where τ is the residence time of the reactor.<br>
 	Residence time in the reactor is equal to the space time if the conditions in the reactor like
 	pressure and temperature are same as those at the entrance. In the ideal tubular reactor, which is
-	called the “plug flow” reactor, specific assumptions are made about the extent of mixing:<br>
+	called the &ldquo;plug flow&rdquo; reactor, specific assumptions are made about the extent of mixing:<br>
 	1. no mixing in the axial direction, i.e., the direction of flow<br>
 	2. complete mixing in the radial direction<br>
 	3. a uniform velocity profile across the radius.<br>
@@ -124,35 +124,34 @@
 	tank reactor. The validity of the assumptions will depend on the geometry of the reactor and the
 	flow conditions. Deviations, which are frequent but not always important, are of two kinds:<br>
 	1. mixing in longitudinal direction due to vortices and turbulence<br>
-	2. incomplete mixing in radial direction in laminar flow conditions<br>
+	2. incomplete mixing in radial direction in laminar flow conditions<br><br>
 	<u>Mass Balance</u><br>
 	Steady state molar balance over small elemental volume ΔV yields<br>
-<img src="../images/equations/eq1.jpg" style="width:327px;height:126px ; position: relative; bottom: -15px; " ><br><br>
+<img src="../images/equations/eq1.jpg" style="width:307px;height:76px ; position: relative; bottom: -15px; " ><br><br>
 
 	The conversion, X<sub>A</sub>, is defined as:<br>
-	X<sub>A</sub> = (inlet concentration – outlet concentration) / (inlet concentration)<br>
+	X<sub>A</sub> = (inlet concentration - outlet concentration) / (inlet concentration)<br>
 	Volume of a PFR with given influent flow rate and feed composition to achieve a
 	required conversion may be obtained from the above equation, if the rate equation is known. The
 	3rd term in the above equation may be integrated if the rate equation is known.
 	Rate equation for a given reaction can also be obtained using a PFR.
-	For a single reaction say, A+B
-	C+D
-	Assume the rate equation to be <img src="../images/equations/eq23.PNG" style="width:193px;height:49px ; position: relative; bottom: -15px; " >and a constant density system<br><br>
+	For a single reaction say, A+B->C+D<br>
+	Assume the rate equation to be <img src="../images/equations/eq23.PNG" style="width:153px;height:29px ; position: relative; bottom: -15px; " >and a constant density system<br><br>
 	Experiments to be performed with different space times in the reactor with the known ratio of
 	reactant B to A(M) in the inlet. Steady state concentration of A at the reactor outlet may be
-	analyzed for each run.
+	analyzed for each run.<br>
 	Now equation A after integration with for M>1 , can be written as<br>
-	<img src="../images/equations/eq2.jpg" style="width:428px;height:130px ; position: relative; bottom: -15px; " ><br>
+	<img src="../images/equations/eq2.jpg" style="width:308px;height:70px ; position: relative; bottom: -15px; " ><br>
 
 
 	Plotting
-<img src="../images/equations/eq2.jpg" style="width:428px;height:130px ; position: relative; bottom: -20px; " > vs <img src="../images/equations/j1lXitGp.png" style="width:15px;height:28px ; position: relative; bottom: -15px; " ><br><br>
+<img src="../images/equations/eq2.jpg" style="width:308px;height:70px ; position: relative; bottom: -20px; " > vs <img src="../images/equations/j1lXitGp.png" style="width:15px;height:28px ; position: relative; bottom: -15px; " ><br><br>
 	yields a straightline passing through origin if the
 	assumed equation is correct. The slope=k.<br>
-	For M=1, the performance equation is<img src="../images/equations/eq3.jpg" style="width:297px;height:115px ; position: relative; bottom: -20px; " ><br>
+	For M=1, the performance equation is<img src="../images/equations/eq3.jpg" style="width:207px;height:75px ; position: relative; bottom: -20px; " ><br>
 	So the plot of<img src="../images/equations/KzKdXIFK.png" style="width:139px;height:69px ; position: relative; bottom: -15px; " >vs <img src="../images/equations/j1lXitGp.png" style="width:15px;height:28px ; position: relative; bottom: -10xpx; " ><br><br>
-	vs
-	yields a straightline passing through origin if the assumed equation is correct. The slope=k.
+	
+	yields a straightline passing through origin if the assumed equation is correct. The slope=k.<br>
 	If the data do not fit by a straight line assume different rate equation and proceed as above.<br>
 	<b>Note: For theory on conductivity meter, refer the “Theory Section” for Batch
 	reactor</b>
@@ -200,12 +199,12 @@
 	5) Set the required temperature to be maintained in the reactor.Switch on the
 	heater to heat the reactor contents to the required temperature .<br>
 	6) Calculate the flowrate of NaOH(
-<img  src= "../images/equations/eq9.PNG" style="width:43px;height:36px;position: relative; bottom: -15px; ">) required to keep the desired value of
-	<img  src= "../images/equations/eq10.PNG" style="width:245px;height:60px;position: relative; bottom: -20px; ">). M may be greater than or equal to one. Calculate the
+<img  src= "../images/equations/eq9.PNG" style="width:33px;height:36px;position: relative; bottom: -15px; ">) required to keep the desired value of
+	<img  src= "../images/equations/eq10.PNG" style="width:200px;height:50px;position: relative; bottom: -20px; ">). M may be greater than or equal to one. Calculate the
 	total flowrate (Q).<br><br>
 	7) Adjust the flowrate of NaOH to the calculated value, without changing
 	the EA flowrate.<br>
-	8) Calculate the actual value of M obtained after adjusting the flowrates.
+	8) Calculate the actual value of M obtained after adjusting the flowrates.<br>
 	9) Calculate the space time using the total flow rate.<br>
 	10) Start the stirrer in the reactor. Close the drain valve completely. Allow
 	the reaction to proceed till steady state is attained, as indicated by
@@ -221,77 +220,77 @@
 	<h3>Observations and calculations:</h3><br>
 	A -> Ethyl acetate<br>
 	B -> NaOH<br>
-	Strength of Ethyl acetate in stock solution = <img  src= "../images/equations/eq11.PNG" style="width:51px;height:41px;position: relative; bottom: -15px; ">= ------------------------ gmol/L<br><br>
+	Strength of Ethyl acetate in stock solution = <img  src= "../images/equations/eq11.PNG" style="width:31px;height:31px;position: relative; bottom: -15px; ">= ------------------------ gmol/L<br><br>
 	Strength of NaOH in stock solution= <img  src= "../images/equations/eq12.PNG" style="width:51px;height:41px;position: relative; bottom: -20px; ">= ------------------------ gmol/L<br><br>
 	Diameter of the tube ,d = -----------------------cm<br>
-	Coil diameter , Dc = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Coil diameter , D<sub>c</sub> = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	cm<br>
-	Number of turns= Nt =<br>
-	V = volume of tubular reactor = ( d2/4)×
-	Dc Nt =
-	= -----------------------cm3<br>
+	Number of turns= N<sub>t</sub> =<br>
+	V = volume of tubular reactor = ( d<sup>2</sup>/4)×
+	D<sub>c</sub> N<sub>t</sub> =
+	= -----------------------cm<sup>3</sup><br>
 	V =----------------------- L<br>
 	Tabular columns:<br>
 
 <img  src= "../images/prmf1.png" style="width:589px;height:157px;position: relative; bottom: -20px;"><br><br>	
 
-	<h3>Calculations:</h3><br>
+	<b>Calculations:</b><br>
 	Calculate the total flow rate Q= <img  src= "../images/equations/eq8.PNG" style="width:43px;height:36px;position: relative; bottom: -15px;">+<img  src= "../images/equations/eq9.PNG" style="width:43px;height:36px;position: relative; bottom: -15px;"> =  LPM<br><br>
 	Calculate the space time , = V/Q = &nbsp;&nbsp; &nbsp;&nbsp;    min<br>
 	
 	
 	Set value of M = 
-<img  src= "../images/equations/eq16.PNG" style="width:254px;height:92px;position: relative; bottom: -15px;"><br><br>
+<img  src= "../images/equations/eq16.PNG" style="width:184px;height:62px;position: relative; bottom: -15px;"><br><br>
 	Concentartion of ethyl acetate in the feed mixture,<br>
-	<img  src= "../images/equations/eq17.PNG" style="width:254px;height:92px;position: relative; bottom: -15px;"><br><br>
+	<img  src= "../images/equations/eq17.PNG" style="width:154px;height:52px;position: relative; bottom: -15px;"><br><br>
 	C<sub>Ao</sub> = --------------------gmol/L<br>
 	Concentartion of NaOH in the feed mixture,<br>
-	<img  src= "../images/equations/eq18.PNG" style="width:254px;height:92px;position: relative; bottom: -20px;"><br><br>
+	<img  src= "../images/equations/eq18.PNG" style="width:154px;height:52px;position: relative; bottom: -20px;"><br><br>
 	C<sub>Bo</sub> = --------------------gmol/L<br>
 	As the conductivity meter calibration is available only at 28<sup>0</sup>C, the conductivity<br>
 	meter reading obtained at a given temperature of reaction is to be corrected for 28<sup>0</sup>C.<br>
 	Temperature compensation for conductivity meter<br>
-	<img  src= "../images/equations/eq19.PNG" style="width:399px;height:92px;position: relative; bottom: -20px;"><br><br>
+	<img  src= "../images/equations/eq19.PNG" style="width:299px;height:92px;position: relative; bottom: -20px;"><br><br>
 	Where ,<br>
 	Y<sub>T</sub> =conductivity meter reading at any temperature T in mS/cm<br>
 	Y<sub>28</sub> = conductivity meter reading at a temperature of 28<sup>0</sup>C in mS/cm<br>
-	Obtain Y<sub>28</sub> corresponding to measured conductivity meter reading ( YT) using the
+	Obtain Y<sub>28</sub> corresponding to measured conductivity meter reading ( Y<sub>T</sub>) using the
 	equation above.<br>
 	Conductivity meter is calibrated for concentrations of NaOH in the reaction mixture at a
-	temperature of 280C.<br>
+	temperature of 28<sup>0</sup>C.<br>
 	Obtain the Concentration of NaOH at 28<sup>0</sup>C using the calibration equation given below
 	Conductivitymeter calibration equation for 28<sup>0</sup>C.<br>
 	
-<img  src= "../images/equations/eq20.PNG" style="width:383px;height:73px;position: relative; bottom: -20px;"><br><br>
+<img  src= "../images/equations/eq20.PNG" style="width:283px;height:73px;position: relative; bottom: -20px;"><br><br>
 	Where,<br><br>
 	C<sub>B</sub>= Concentration of NaOH in the reaction mixture at steady state<br><br>
-	Y<sub>28</sub> = Conductivity meter reading for solution, corrected for 280C<br>
+	Y<sub>28</sub> = Conductivity meter reading for solution, corrected for 28<sup>0</sup>C<br>
 	Concentartion of unreacted NaOH in the reaction mixture at steady state,<br>
 	C<sub>B</sub>=
 	gmol/L (obtained from the conductivity meter calibration
 	graph)<br>
 	Concentartion of ethyl acetate in the reaction mixture at steady state,<br><br>
-	<img  src= "../images/equations/eq21.PNG" style="width:272px;height:49px;position: relative; bottom: -20px;"><br><br>
+	<img  src= "../images/equations/eq21.PNG" style="width:202px;height:39px;position: relative; bottom: -20px;"><br><br>
 	C<sub>A</sub>= --------------------gmol/L<br>
-	Conversion of ethyl acetate, <img  src= "../images/equations/eq22.PNG" style="width:235px;height:77px;position: relative; bottom: -15px;">=<br>
+	Conversion of ethyl acetate, <img  src= "../images/equations/eq22.PNG" style="width:200px;height:57px;position: relative; bottom: -15px;">=<br>
 	
 	(CA/ CAo)=
-	Performance equation for PFR with rate equation of the form <img  src= "../images/equations/eq23.PNG" style="width:193px;height:49px;position: relative; bottom: -15px;"><br><br>
+	Performance equation for PFR with rate equation of the form <img  src= "../images/equations/eq23.PNG" style="width:133px;height:39px;position: relative; bottom: -15px;"><br><br>
 	for M>1 , can be written as<br>
 
-<img  src= "../images/equations/eq2.jpg" style="width:428px;height:130px;position: relative; bottom: -15px;"><br><br>
+<img  src= "../images/equations/eq2.jpg" style="width:280px;height:80px;position: relative; bottom: -15px;"><br><br>
 
 	
 	Plotting
-	<img  src= "../images/equations/eq4.jpg" style="width:357px;height:109px;position: relative; bottom: -15px;"> Vs <img  src= "../images/equations/5EnjPfms.png" style="width:55px;height:36px;position: relative; bottom: -15px;"><br><br>
+	<img  src= "../images/equations/eq4.jpg" style="width:280px;height:55px;position: relative; bottom: -15px;"> Vs <img  src= "../images/equations/5EnjPfms.png" style="width:55px;height:36px;position: relative; bottom: -15px;">
 	yields a straightline passing through<br>
 	origin if the assumed rate equation is correct. The slope=k.<br>
-	For M=1, the performance equation is <img  src= "../images/equations/eq3.jpg" style="width:297px;height:115px;position: relative; bottom: -15px;"><br>
+	For M=1, the performance equation is <img  src= "../images/equations/eq3.jpg" style="width:297px;height:85px;position: relative; bottom: -15px;"><br>
 	So the plot of <img  src= "../images/equations/7CY2qwlP.png" style="width:98px;height:69px;position: relative; bottom: -15px;">
 	vs <img  src= "../images/equations/5EnjPfms.png" style="width:55px;height:36px;position: relative; bottom: -15px;"><br>
 	yields a straight line passing through origin. The slope=k.<br><br>
 	
-<img  src= "../images/prpfr1.PNG" style="width:823px;height:488px"><br><br>
+<img  src= "../images/expproc9.png" style="width:823px;height:488px"><br><br>
 	Graph for M >1
 
 <img  src= "../images/tab3.png" style="width:491px;height:278px"><br>From the graph we get,<br>
@@ -319,7 +318,7 @@
 	J/mol<br>
 	<b>Results:</b><br>
 	The rate constant for the saponification of Ethy acetate with NaOH at a temp of
-	ToC,<br>
+	T<sup>o</sup>C,<br>
 	k = -------------------------------litre/((mol)(min))<br>
 	Discuss and conclude on the temperature dependency of rate constant.<br>
 	The activation energy (E) for the reaction=J/mol<br>

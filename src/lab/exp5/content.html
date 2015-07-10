@@ -157,27 +157,29 @@ derived for straight tubes as well.
 <div style="text-indent: 30px;">
 This analysis assumes several conditions. First, we assume that the particles are
 packed in random; there is no channeling inthe packed bed. Channeling occurs
-when the fluid flowing through the packed bed finds a “preferred path” through the
+when the fluid flowing through the packed bed finds a &ldquo;preferred path&rdquo; through the
 bed. We also assume that the diameter of the packing is much smaller than the
 diameter of the column as well. The maximum recommended particle diameter is
 one-fifth of the column diameter. We assume that velocity, particle diameter and
 void fraction behaves as a bulk behavior and hence we can use an average values.
 The Ergun equation is</br></br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>f</mi><mi>p</mi></msub><mfrac><mrow><mn>150</mn><mo>(</mo><mn>1</mn><mo>-</mo><mi>&#949;</mi><mo>)</mo></mrow><mstyle displaystyle="true"><mfrac><mrow><msub><mi>Q</mi><mi>s</mi></msub><msub><mi>D</mi><mi>p</mi></msub><msub><mi>V</mi><mi>o</mi></msub><mi>&#961;</mi></mrow><mi>&#956;</mi></mfrac></mstyle></mfrac><mo>+</mo><mn>1</mn><mo>.</mo><mn>75</mn></math>
+<img src="../images/CodeCogsEqn (73).gif"></img>
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------(1)</br></br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>f</mi><mi>p</mi></msub></math> is the friction factor for a packed bed called as modified friction factor.</br></br>
-Where<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>f</mi><mi>p</mi></msub><mo>=</mo><mfrac><mrow><mo>&#8710;</mo><mi>P</mi><msub><mo>&#8709;</mo><mi>s</mi></msub><msub><mi>D</mi><mi>p</mi></msub><msup><mi>&#949;</mi><mn>2</mn></msup></mrow><mrow><mi>&#961;</mi><msup><msub><mi>V</mi><mn>0</mn></msub><mn>2</mn></msup><mi>L</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi>&#949;</mi><mo>)</mo></mrow></mfrac></math> 
+f<sub>p</sub> is the friction factor for a packed bed called as modified friction factor.</br></br>
+Where<img src="../images/CodeCogsEqn (74).gif"></img>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---------(2)</br>
 
-With <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8710;</mo></math>P = the pressure drop</b><br>
+With <img src="../images/CodeCogsEqn (75).gif"></img> = the pressure drop</b><br>
 
 L= the height of the bed</b><br>
-μ=the fluid viscosity</b><br>
-ε=the fluid viscosity</b><br>
-Vo= the fluid superficial velocity</b><br>
-Dp =the particle diameter</b><br>
-ρ= the density of the fluid</b><br>
-φs = sphericity of the particle.</b><br>
+<img src="../images/CodeCogsEqn (47).gif"></img>=the fluid viscosity</b><br>
+<img src="../images/CodeCogsEqn (76).gif"></img>=the fluid viscosity</b><br>
+V<sub>0</sub>= the fluid superficial velocity</b><br>
+D<sub>p</sub> =the particle diameter</b><br>
+<img src="../images/CodeCogsEqn (46).gif"></img>= the density of the fluid</b><br>
+<img src="../images/CodeCogsEqn (77).gif"></img> = sphericity of the particle.</b><br>
 
 Ergun equation was obtained by fitting the data for spheres,cylinders and crushed
 solids such as coke and sand. For Raschig rings and Berl saddles, which have
@@ -199,8 +201,8 @@ density.
 At low Reynolds numbers,the quantity 1.75 of Eq.(1) is negligible in comparison
 with Reynolds number term.This implies that the viscous forces control and that
 inertial forces are unimportant. Then we have</br></br>
-
- <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mo>&#8710;</mo><mi>P</mi><mi>&#966;</mi><msup><mi>s</mi><mn>2</mn></msup><mi>D</mi><msup><mi>p</mi><mn>2</mn></msup><msup><mi>&#949;</mi><mn>2</mn></msup></mrow><mrow><mi>&#961;</mi><mi>V</mi><mn>0</mn><mi>L</mi><mi>&#956;</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi>&#949;</mi><msup><mo>)</mo><mn>2</mn></msup></mrow></mfrac></math>=150
+<img src="../images/CodeCogsEqn (78).gif"></img>
+ 
 </br></br>
 This is called the Kozeny-Carman equation and is a laminar flow equation, to be
 used when NRep is less than about 1.For a given system it indicates that the pressure
@@ -210,12 +212,12 @@ For large Reynolds numbers,above about 1000,the first term on the right hand sid
 of Eq.(1) fades out as viscous forces become negligible and inertial forces control ,
 Then</br></br>
 
-<img  src="../images/equations/eq6.PNG" style="width:153px;height:68px"></br></br>
+<img src="../images/CodeCogsEqn (79).gif"></img></br></br>
 </br></br>
 This is called Blake Plummer equation.For large Reynolds numbers,above about
 1000 pressure drop is propotional to square of velocity.</br>
-In addition to Ergun’s correlation, another model, the Leva’s equation is
-commonly utilized in the prediction of pressure drop versus flow rate. Leva’s
+In addition to Ergun&rsquo; correlation, another model, the Leva&rsquo;s equation is
+commonly utilized in the prediction of pressure drop versus flow rate. Leva&rsquo;s
 equation, based on the study of single incompressible fluids through an
 incompressible bed of granular salts, is relatively similar to the structure of the
 Ergun equation.</br></br>
@@ -227,10 +229,11 @@ Raschig rings</br>
 <img  src= "../images/ftpb2.png" style="width:361px;height:175px"></br></br>
 
 Pall rings</br>
-<img  src="../images/ftpb3.png" style="width:189px;height:183px"></br></br>
-Intalox saddles
+<img  src="../images/ftpb3.png" style="width:189px;height:183px">&nbsp;&nbsp;&nbsp;</br></br>
 
-
+Intalox saddles</br>
+<img  src="../images/mar1.png" style="width:114px;height:76px"></br></br>
+Berl saddles
 </p>
 
        </section>       
@@ -274,21 +277,7 @@ Intalox saddles
 To determine the effect of superficial mass velocity on pressure drop across the packed bed
 with liquid flow. Verify Erguns equation. Determine the effect of modified Reynolds number
 on modified friction factor.</br>
-Apparatus required: <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msub>
-    <mtext>CCL</mtext>
-    <mn>4</mn>
-  </msub></math> manometer, <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msub>
-    <mtext>H</mtext>
-    <mi>g</mi>
-  </msub>
-</math> manometer, <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <msub>
-    <mtext>H</mtext>
-    <mi>g</mi>
-  </msub>
-</math> manometer</br></br>
+Apparatus required: CCL<sub>4</sub> manometer, H<sub>g</sub>manometer</br></br>
 
 <b>Procedure:</b></br>
  <ol>
@@ -308,66 +297,63 @@ the void volume by draining water from the column. </li>
 <b>Data :</b>
 
 Nominal pipe(column) diameter = </br>
-Actual pipe(column) diameter = D = m</br>
-Length of the packed bed = L = m </br>
-m
-m
-Density of fluid = ρ = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>K</mi><mi>g</mi><mo>/</mo><msup><mi>m</mi><mn>3</mn></msup></math></br>
-Viscosity of fluid= μ = cp</br>
-Density of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi><mi>C</mi><msub><mi>l</mi><mn>4</mn></msub></math> =<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#961;</mi><mrow><mi>C</mi><mi>C</mi><msub><mi>l</mi><mn>4</mn></msub></mrow></msub></math> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>K</mi><mi>g</mi><mo>/</mo><msup><mi>m</mi><mn>3</mn></msup></math></br>
-Density of Hg = <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#961;</mi><mrow><mi>H</mi><mi>g</mi></mrow></msub></math> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>K</mi><mi>g</mi><mo>/</mo><msup><mi>m</mi><mn>3</mn></msup></math></br></br>
+Actual pipe(column) diameter = D = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m</br>
+Length of the packed bed = L = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m </br>
+
+Density of fluid = <img src="../images/CodeCogsEqn (46).gif"></img> = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kg/m<sup>3</sup></br>
+Viscosity of fluid=  <img src="../images/CodeCogsEqn (47).gif"></img> = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cp</br>
+Density of CCL<sub>4</sub> = <img src="../images/CodeCogsEqn (46).gif"></img><sub>CCL4</sub> =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kg/m<sup>3</sup></br>
+Density of Hg = &nbsp;  <img src="../images/CodeCogsEqn (46).gif"></img><sub>Hg</sub>= &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kg/m<sup>3</sup></br></br>
 
 <b>Observations:</b></br></br>
 
-Volume of voids = <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>m</mi><mn>3</mn></msup></math></br>
-Φs = Sphericity =</br>
-Specific surface area = S = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><msup><mi>m</mi><mn>2</mn></msup><msup><mi>m</mi><mn>3</mn></msup></mfrac><mfrac><mrow><mi>S</mi><mi>u</mi><mi>r</mi><mi>f</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi></mrow><mrow><mi>U</mi><mi>n</mi><mi>i</mi><mi>t</mi><mi>b</mi><mi>e</mi><mi>d</mi><mi>v</mi><mi>o</mi><mi>l</mi><mi>u</mi><mi>m</mi><mi>e</mi></mrow></mfrac></math></br>
+Volume of voids = m<sup>3</sup></br>
+<img src="../images/CodeCogsEqn (77).gif"></img>= Sphericity =</br>
+Specific surface area = S = m<sup>2</sup>/m<sup>3</sup>= surface area/Unit bed area</br>
 
 <img src="../images/tab4.PNG" style="width:286px;height:416px;">
 
 </br></br>
 <b>Calculations:</b></br>
 Flow rate:</br>
-Pressure drop <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8710;</mo><mi>H</mi><mi>m</mi></math> in cm of manometric fluid = </br>
-Bed Porosity = ε = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>V</mi><mi>o</mi><mi>i</mi><mi>d</mi><mi>v</mi><mi>o</mi><mi>l</mi><mi>u</mi><mi>m</mi><mi>e</mi></mrow><mrow><mi>V</mi><mi>o</mi><mi>l</mi><mi>u</mi><mi>m</mi><mi>e</mi><mi>o</mi><mi>f</mi><mi>b</mi><mi>e</mi><mi>d</mi></mrow></mfrac></math></br></br>
+Pressure drop <img src="../images/CodeCogsEqn128.gif"></img>in cm of manometric fluid = </br>
+Bed Porosity = <img src="../images/CodeCogsEqn (76).gif"></img> = void volume/volume of bed</br></br>
 
 
-Cross sectional area of the bed = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>&#960;</mi><msup><mi>D</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>=</mo><msup><mi>m</mi><mn>2</mn></msup></math> </br></br>
-Volume of bed = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>&#960;</mi><msup><mi>D</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mi>x</mi><mi>L</mi><mo>=</mo><msup><mi>m</mi><mn>3</mn></msup></math>
+Cross sectional area of the bed = <img src="../images/CodeCogsEqn129.gif"></img>= &nbsp;&nbsp;&nbsp; m<sup>2</sup> </br></br>
+Volume of bed =&nbsp;<img src="../images/CodeCogsEqn129.gif"></img>*L=m<sup>3</sup><br>
 
-Equivalent diameter of the particles, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>p</mi></msub><mfrac><mrow><mn>6</mn><mo>(</mo><mn>1</mn><mo>-</mo><mi>&#949;</mi><mo>)</mo></mrow><mrow><msub><mi>&#981;</mi><mi>s</mi></msub><mi>S</mi></mrow></mfrac><mo>=</mo><mi>m</mi></math> </br>
+Equivalent diameter of the particles, D<sub>p</sub>=6(1-<img src="../images/CodeCogsEqn (76).gif"></img>)/<img src="../images/CodeCogsEqn (77).gif"></img>*S=&nbsp;&nbsp;  m</br>
 
-Mass flow rate = <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>m</mi><mn>0</mn></mover></math> = Volumetric flowrate * density</br>
+Mass flow rate = <img src="../images/CodeCogsEqn130.gif"></img> = Volumetric flowrate * density</br>
 
-Superficial mass velocity, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi><mn>0</mn></msub><mfrac><mstyle displaystyle="true"><mover><mi>m</mi><mn>0</mn></mover></mstyle><mrow><mi>C</mi><mi>r</mi><mi>o</mi><mi>s</mi><mi>s</mi><mo>&#160;</mo><mi>s</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>a</mi><mi>l</mi><mo>&#160;</mo><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi><mo>&#160;</mo><mi>o</mi><mi>f</mi><mo>&#160;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo>&#160;</mo><mi>t</mi><mi>o</mi><mi>w</mi><mi>e</mi><mi>r</mi></mrow></mfrac><mo>=</mo><mi>K</mi><mi>g</mi><mo>/</mo><mi>s</mi><mo>.</mo><msup><mi>m</mi><mn>2</mn></msup></math> </br>
+Superficial mass velocity, G<sub>0</sub>=<img src="../images/CodeCogsEqn130.gif"></img>/cross sectionalarea of tower= kg/s.m<sup>2</sup> </br>
+<img src="../images/CodeCogsEqn (48).gif"></img></br></br>
 
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8710;</mo><msub><mi>H</mi><mi>w</mi></msub><mo>=</mo><mfrac><mrow><mo>(</mo><msub><mi>&#961;</mi><mi>m</mi></msub><mo>-</mo><mi>&#961;</mi><mo>)</mo></mrow><mi>&#961;</mi></mfrac><mi>x</mi><mo>&#8710;</mo><msub><mi>H</mi><mi>m</mi></msub></math></br></br>
-
-ρm & ρ are density of manometric fluid and density of fluid .</br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8710;</mo><mi>P</mi><mo>=</mo><mo>&#8710;</mo><msub><mi>H</mi><mi>w</mi></msub><mo>.</mo><mi>&#961;</mi><mo>.</mo><mi>g</mi><mo>=</mo><mi>N</mi><mo>/</mo><msup><mi>m</mi><mn>2</mn></msup></math></br></br>
+<img src="../images/CodeCogsEqn (3).gif"></img><sub>m</sub> & <img src="../images/CodeCogsEqn (3).gif"></img> are density of manometric fluid and density of fluid .</br>
+<img src="../images/CodeCogsEqn (90).gif"></img>=   &nbsp;&nbsp;&nbsp;  N/m<sup>2</sup></br></br>
 
 Modified Reynolds number,
 </br>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>N</mi><mrow><mi>R</mi><mi>e</mi><mi>p</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>D</mi><mi>p</mi></msub><msub><mi>G</mi><mn>0</mn></msub></mrow><mi>&#956;</mi></mfrac></math>
+N<sub>Rep</sub>=D<sub>p</sub>*G<sub>0</sub>/<img src="../images/CodeCogsEqn (47).gif"></img>
 </br>
-μ = viscosity of fluid</br>
+<img src="../images/CodeCogsEqn (47).gif"></img> = viscosity of fluid</br>
 <img  src= "../images/prpk1.PNG" style="width:303px;height:220px"></br>
-Plot ∆P vs <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>G</mi><mn>0</mn></msub></math> on log – log Graph</br>
+Plot <img src="../images/CodeCogsEqn (75).gif"></img> vs G<sub>0</sub> on log - log Graph</br>
 Find the slope = n</br>
-Then <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8710;</mo><mi>P</mi><mo>&#160;</mo><mi>&#945;</mi><mo>&#160;</mo><msup><msub><mi>G</mi><mn>0</mn></msub><mi>n</mi></msup></math></br>
+Then <img src="../images/CodeCogsEqn (75).gif"></img><img src="../images/CodeCogsEqn131.gif"></img></br>
 Calculate Modified friction factor</br>
+<img src="../images/CodeCogsEqn132.gif"></img></br>
 
-fp = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mo>&#8710;</mo><mi>P</mi><mi>&#961;</mi><msub><mi>&#981;</mi><mi>s</mi></msub><msub><mi>D</mi><mi>p</mi></msub><msup><mi>&#949;</mi><mn>2</mn></msup></mrow><mrow><msup><msub><mi>G</mi><mn>0</mn></msub><mn>2</mn></msup><mi>L</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi>&#949;</mi><mo>)</mo></mrow></mfrac></math> </br>
-
-Verify Ergun’s Equation given below</br>
-</br><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mi>p</mi><mo>=</mo><mfrac><mrow><mn>150</mn><mo>(</mo><mn>1</mn><mo>-</mo><mi>&#949;</mi><mo>)</mo></mrow><mrow><mi>&#981;</mi><mi>s</mi><msub><mi>N</mi><mrow><mi>R</mi><mi>e</mi><mo>,</mo><mi>p</mi></mrow></msub></mrow></mfrac><mo>+</mo><mn>1</mn><mo>.</mo><mn>75</mn></math>
+Verify Ergun&rsquo;s Equation given below</br>
+</br><img src="../images/CodeCogsEqn133.gif"></img>
 </br>
-Plot <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>f</mi><mi>p</mi></msub><mo>&#160;</mo><mi>v</mi><mi>s</mi><mo>&#160;</mo><mfrac bevelled="true"><mn>1</mn><msub><mi>N</mi><mrow><mi>R</mi><mi>e</mi><mi>p</mi></mrow></msub></mfrac></math> on an ordinary graph sheet. Find the slope and intercept.</br></br>
-Check for the validity of Ergun’s equation</br></br>
+Plot f<sub>p</sub>vs 1/N<sub>Rep</sub> on an ordinary graph sheet. Find the slope and intercept.</br></br>
+Check for the validity of Ergun&rsquo;s equation</br></br>
 
 <img  src= "../images/prf2.png" style="width:538px;height:473px"></br>
 <table></table>
-<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>f</mi><mrow><mi>t</mi><mi>h</mi><mi>e</mi><mn>0</mn></mrow></msub><mo>&#160;</mo><mi>v</mi><mi>s</mi><mo>&#160;</mo><msub><mi>N</mi><mrow><mi>R</mi><mi>e</mi><mo>,</mo><mi>p</mi></mrow></msub><mo>&#160;</mo></math> on a log-log graph.</br>
+plot f<sub>theo</sub> vs N<sub>Rep</sub> on a log-log graph.</br>
 </br><b>Results:</b></br> 
 Comment on effect of modified Reynolds number on modified friction factor.
 Comment on effect of superficial mass velocity on process drop across the bed and report n.</br>
@@ -509,8 +495,8 @@ text-decoration: none;" href="indexs.html">Self Evaluation</a>
 
 
                             <p>&nbsp;1.
-Derive the Ergun’s equation for pressure drop in packed bed. What are the assumptions made?
-What are the limitations for the application of Ergun’s equation?<br><br>
+Derive the Ergun&rsquo;s equation for pressure drop in packed bed. What are the assumptions made?
+What are the limitations for the application of Ergun&rsquo;s equation?<br><br>
 2.
 Define sphericity, equivalent particle diameter and specific surface area.<br><br>
 3.
@@ -518,7 +504,7 @@ Packed bed is composed of cubes 0.02 m and the bulk density of the packed bed is
 kg/m<sup>3</sup>. The density of the solid cubes is 1500 kg/m<sup>3</sup>.<br><br>
 
 
-a.) Calculate the void fraction (ε) and effective diameter (D<sub>p</sub>).<br>
+a.) Calculate the void fraction (<img src="../images/CodeCogsEqn (76).gif"></img>) and effective diameter (D<sub>p</sub>).<br>
 b.) What is the void fraction if the cubes are replac
 ed with cylinders that have a diameter
 0.02 m and a height 0.02 m, all other parameters remaining the same</p>
