@@ -30,7 +30,7 @@
   page -->
    
 
- <link class="custom" href="images/favicon.png" rel="shortcut icon">
+ <link class="custom" href="images/favicon1.png" rel="shortcut icon">
     <!-- These are the stylesheets used for the lab. Please don't
   edit them; If you do, you will lose the edits in subsequent 
   releases of this User Interface. -->
@@ -56,10 +56,10 @@ background:none;
 <style>
 
 .navbar ul {
-	background: #787878; 
-	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
-	background: -moz-linear-gradient(top, #787878 0%, #bbbbbb 100%); 
-	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	background: #99ccff; 
+	background: linear-gradient(top,#66ccff 0%, #6699ff 100%);  
+	background: -moz-linear-gradient(top, #99ccff 0%, #6699ff 100%); 
+	background: -webkit-linear-gradient(top, #66ccff 0%,#6699ff 100%); 
 	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
 	padding: 0 20px;
 	
@@ -86,10 +86,10 @@ background:none;
 	float: left; z-index: 1;
 }
 	.navbar ul li:hover {
-		background: #4b545f;
-		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%); z-index: 1;
+		background: #012943;
+		background: linear-gradient(top, #012943 0%,  #012943 40%);
+		background: -moz-linear-gradient(top,#012943 0%,  #012943 40%);
+		background: -webkit-linear-gradient(top,#012943 0%,#012943 40%); z-index: 1;
 	}
 		.navbar ul li:hover a {
 			color: #fff; z-index: 1;
@@ -100,13 +100,13 @@ background:none;
 		color: #fff; text-decoration: none; z-index: 1;
 	}
 .navbar ul ul {
-	background: #5f6975; border-radius: 0px; padding: 0;
+	background: #012943; border-radius: 0px; padding: 0;
 	position: absolute; top: 100%; z-index: 1;
 }
 	.navbar ul ul li {
 		float: none; 
-		border-top: 1px solid #6b727c;
-		border-bottom: 1px solid #575f6a;
+		border-top: 1px solid #012943;
+		border-bottom: 1px solid #012943;
 		position: relative; z-index: 1;
 	}
 		.navbar ul ul li a {
@@ -114,7 +114,7 @@ background:none;
 			color: #fff; z-index: 1;
 		}	
 			.navbar ul ul li a:hover {
-				background: #4b545f; z-index: 1;
+				background:#012975; z-index: 1;
 			}
 
 .navbar ul ul ul {
@@ -165,7 +165,7 @@ $(document).ready(function()
         
         homePage=$("div#lab-header-heading a").html();
         
-    breadcrumb="<font color='white'>"+ "<a href='../index.html'>Virtual labs Home<a/> \> <a href='index.html'>" + homePage + "<\/a>"+ "<\/font>";
+    breadcrumb="<font color='white'>"+ "<a href='http://vlab.co.in/institute_detail.php?ins=011'>Virtual labs Home<a/> \> <a href='http://vlab.co.in/institute_detail.php?ins=011'>" + homePage + "<\/a>"+ "<\/font>";
       
     $("article#lab-article").prepend("<div id='lab-article-breadcrumb' class='breadcrumb'>"+ breadcrumb + "<\/div>");
         // $("article#lab-article div#lab-article-breadcrumb").html(breadcrumb);                  
