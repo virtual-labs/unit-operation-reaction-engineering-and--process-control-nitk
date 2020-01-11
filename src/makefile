@@ -5,7 +5,7 @@ build-js-dir=${build-dir}/js
 theme=blue-icon
 
 
-all:  help-dir 
+all:patch-analytics help-dir 
 
 patch-analytics:
 	git clone https://github.com/virtual-labs/vlabs-analytics.git
