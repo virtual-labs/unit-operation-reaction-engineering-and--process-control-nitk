@@ -57,11 +57,12 @@
 
         <!--Title of Simulation		-->
         <div id="titleLarge" class="title" style="visibility: visible;font-size:20px;">
-            <h3>Reaction kinetic studies in a batch reactor</h3>
+            <h3>Reaction kinetic studies in a Batch Reactor</h3>
         </div>
-        &nbsp;<div id="titleSmall" class="title2" style="visibility:hidden; cursor:pointer;">
-            <h4 id="subTitle" >Reaction kinetic studies in a batch reactor</h4>
-            <!-- <h4 id="subTitle" onmouseenter="changeSubTitle()" onmouseleave="changeSubTitleBack()" onclick="changeCanvas()">Reaction kinetic studies in plug flow reactor</h4> -->
+        &nbsp;
+        <div id="titleSmall" class="title2" style="visibility:hidden;">
+            <h3 id="ftpmotion" onmouseenter="goToStart(this.id);" onmouseleave="changeOriginal(this.id);" style="font-size: 12px;">Reaction Kinetic Studies in a Batch Reactor</h3>
+
         </div>
 
         <div id="buttonsList" style="position: absolute; visibility: hidden; top: 20px; left: 400px; color: white; z-index: 1;">
@@ -90,9 +91,9 @@
         <div class="simsubscreen" id="canvas1" style="visibility:hidden">
             <!-- <strong id="titlestep" class="incanvas">STEP </strong>
 <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span> -->
-            <p id="pumptext" class="steptext" style="position: absolute; font-family:verdana; font-size:14px; color: #fff; top: 50px; left: 50px;">Choose what you want to do.</p>
+<p id="pumptext" class="steptext" style="position: absolute; font-family:verdana; font-size:24px; color: #fff; top: 30px; left: 230px;">What would you like to do.</p>
 
-            <p style="position: absolute; top:60px; left: 170px; font-size:20px;"><b>What would you like to do?</b></p>
+            <!-- <p style="position: absolute; top:60px; left: 170px; font-size:20px;"><b>What would you like to do?</b></p> -->
 
             <button onclick="selectAction(1)" style="position: absolute; top: 130px; left: 250px; width: 250px; height: 30px;">Perform experiment</button>
             <button onclick="selectAction(2)" style="position: absolute; top: 170px; left: 250px; width: 250px; height: 30px">Evaluate yourself</button>
@@ -172,19 +173,19 @@
             <div id="configExp" style="font-weight:bold;">
                 <p style="position: absolute; left:30px; top: 50px; color: #1981e2;font-style: italic;">Reaction Temperature :
                     <input style="position: absolute; left: 260px;" type="number" step="1" value="30" id="reactionTempEval" name="Reaction Temperature" min="30" max="50">
-                    <p style="color:#1981e2; position: absolute; left: 440px; top: 50px;font-style: italic;">° Celsius</p>
+                    <p style="color:#1981e2; position: absolute; left: 360px; top: 50px;font-style: italic;">° Celsius</p>
                 </p>
                 <p style="position: absolute; left:30px; top: 100px; color: rgb(131, 117, 117);font-style: italic;">Rate Constant(k) :
                     <input style="position: absolute; left: 260px;" type="number" value="" id="rateConstEval" >
-                    <p style="color:rgb(131, 117, 117); position: absolute; left: 450px; top: 100px;font-style: italic;">Litre/gmol.min</p>
+                    <p style="color:rgb(131, 117, 117); position: absolute; left: 475px; top: 100px;font-style: italic;">Litre/gmol.min</p>
                 </p>
                 <p style="position: absolute; left:30px; top: 150px; color:rgb(131, 117, 117);font-style: italic;">Frequency Factor(k<sub>0</sub>) :
                     <input style="position: absolute; left: 260px;" type="number" value="" id="freqFactor" >
-                    <p style="color:rgb(131, 117, 117); position: absolute; left: 450px; top: 150px;font-style: italic;">x10<sup>8</sup> (Litre/gmol.min)</p>
+                    <p style="color:rgb(131, 117, 117); position: absolute; left: 475px; top: 150px;font-style: italic;">x10<sup>8</sup> (Litre/gmol.min)</p>
                 </p>
                 <p style="position: absolute;  left:30px; top: 200px; color: rgb(131, 117, 117);font-style: italic;">Activation Energy (E):
                     <input style="position: absolute; left: 260px;" type="number" value="" id="activationEnergy" >
-                    <p style="color:rgb(131, 117, 117); position: absolute; left: 450px; top: 200px;font-style: italic;">J/mol</p>
+                    <p style="color:rgb(131, 117, 117); position: absolute; left: 475px; top: 200px;font-style: italic;">J/mol</p>
                 </p>
                 <button id="evaluateButtonFromData" style="position: absolute; top: 280px; left:75%; padding:15px; font-weight:bold;">EVALUATE</button>
 				<div id="highlightEvaluation" style="position: absolute; top: -27.5px; left:655px; width: 92px; height:30px; border:4px solid yellow; border-radius:3px; visibility:hidden;"></div>
@@ -355,15 +356,36 @@
 
         </div>
 		
-		 <div class="" id="observations" style="visibility:hidden; height: 465px; width: 470px; top: 50px; left: 15px; position: absolute; background-color: #000; z-index: 1000; border:5px solid darkblue; border-radius:7.5px;">
+		 <div class="" id="observations" style="visibility:hidden; height: 465px; width: 760px; top: 50px; left: 15px; position: absolute; background-color: #000; z-index: 1000; border:5px solid darkblue; border-radius:7.5px;">
             <h1 style="position: absolute; top: -10px; left: 120px; color: #fff;">Observations</h1>
-			<table id="observTable" style="position:absolute; left:10px; top:50px; height:auto; width: 450px; background-color:lightgrey;">
-				<tr style="background-color:grey;">
+			  <!-- erin -->
+              <p id="noteremsel" style="z-index: 2000; position: absolute; top: 470px; left: 15px; width: 500px; font-size:13px; color: #fff;">Click on the rows which you want to delete </p>
+            <table id="observTable" style="position:absolute; left:10px; top:50px; height:auto; width: 450px; background-color:lightgrey;">
+                <thead id="head">
+                <tr style="background-color:grey;">
 					<th style="background-color:lightgrey;">Time <br>(seconds)
 					<th style="background-color:lightgrey;">Conductivity <br>(milliSiemens/cm)
 				</tr>
+                </thead>
 			</table>
-			<button id="clearTable" style="position:absolute;  left:170px; top:350px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;">Clear all Readings</button>
+			<button id="clearTable" style="position:absolute;  left:300px; top:400px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;">Clear all Readings</button>
+            <button onclick="remSelRead()" id="remSelRead" style="position:absolute;  left:50px; top:400px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;">Remove Selected Readings</button>
+            <!-- <button onclick="remAllRead()" id="remAllRead" style="visibility: hidden; position: absolute; top: 400px; left: 290px; width:200px; font-size: 13px;z-index: 2500; background-color: #fff;">Clear All readings</button> -->
+            <button onclick="emailSend()" id="emailTable" style="position:absolute;  left:500px; top:400px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;">Email This Table</button>
+
+            <!-- erin 08092021 -->
+            <!-- Pop up to input receiver email ID -->
+            <div id="emailSend" style="visibility: hidden; height: 100px; width: 300px; top: 200px; left: 250px; position: absolute; padding: 8px; background-color: rgb(255, 255, 255); color: black; z-index: 5000;border-radius:10px ">
+                Email:
+                <input id="emailR" type="email" onchange="setemail(this.value)" name="Email" size="20" required="true" ; pattern=".@.">
+
+                <!-- <input id="sendEmail" type="submit" name="Send" value=""> -->
+                <button onclick="sendEmail()" id="sendEmail" style=" position: absolute; top: 8px; left: 230px; width: 70px; font-size: 13px;z-index: 5500; background-color: #fff; ">Send</button>
+                <p id="emailreq" style="z-index: 7500; position: absolute; height: 20px; width: 300px; top: 50px; left: 10px; font-size: 15px; color: black; ">Email is required</p>
+            </div>
+            <!-- info store for mail body -->
+            <p id="info" style="visibility: hidden;"></p>
+        
         </div>
 
         <!-- <div id="questDiv" style="position:absolute; background-color:grey; color:white; padding:7.5px; border-radius:5px; visibility:hidden; text-align:justify;">

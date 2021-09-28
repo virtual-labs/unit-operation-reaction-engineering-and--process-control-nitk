@@ -365,6 +365,11 @@ html {
 /*-----------------------------------------blink----------------------- */
 
 /*ADDED  */
+/* erin */
+/* .selected {
+  background-color: brown;
+  color: #FFF;
+} */
 
 .KMLeftFluid1 {
   animation: KMLeftFluid1 2s;

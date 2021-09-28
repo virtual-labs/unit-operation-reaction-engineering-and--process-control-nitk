@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>SOLVE</title>
+    <title>Reaction Kinetic Studies in Mixed Flow Reactor</title>
     <link rel="stylesheet" href="css/sgca.css" />
     <link rel="stylesheet" href="css/mathstyle.css" />
     <script type="text/javascript" src="js/jquerymin.js"></script>
@@ -57,10 +57,11 @@
 
         <!--Title of Simulation		-->
         <div id="titleLarge" class="title" style="visibility: visible;font-size:20px;">
-            <h3>Reaction Kinetic studies in mixed flow reactor</h3>
+            <h3>Reaction Kinetic Studies in Mixed Flow Reactor</h3>
         </div>
-        <div id="titleSmall" class="title2" style="visibility:hidden">
-            <h5>Reaction Kinetic studies in mixed flow reactor</h5>
+        <div id="titleSmall" class="title2" style="visibility:hidden;">
+            <h3 id="ftpmotion" onmouseenter="goToStart(this.id);" onmouseleave="changeOriginal(this.id);" style="font-size: 11px;">Reaction Kinetic Studies in Mixed Flow Reactor</h3>
+
         </div>
 
         <div id="buttonsList" style="position: absolute; visibility: hidden; top: 20px; left: 400px; color: white; z-index: 1;">
@@ -89,9 +90,9 @@
         <div class="simsubscreen" id="canvas1" style="visibility:hidden">
             <!-- <strong id="titlestep" class="incanvas">STEP </strong>
 <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span> -->
-            <p id="pumptext" class="steptext" style="position: absolute; font-family:verdana; font-size:14px; color: #fff; top: 50px; left: 50px;">Choose what you want to do.</p>
+<p id="pumptext" class="steptext" style="position: absolute; font-family:verdana; font-size:24px; color: #fff; top: 30px; left: 230px;">What would you like to do.</p>
 
-            <p style="position: absolute; top:60px; left: 170px; font-size:20px;"><b>What would you like to do?</b></p>
+            <!-- <p style="position: absolute; top:60px; left: 170px; font-size:20px;"><b>What would you like to do?</b></p> -->
 
             <button onclick="selectAction(1)" style="position: absolute; top: 130px; left: 250px; width: 250px; height: 30px;">Perform experiment</button>
             <button onclick="selectAction(2)" style="position: absolute; top: 170px; left: 250px; width: 250px; height: 30px">Evaluate yourself</button>
@@ -321,9 +322,9 @@
                 <input style="position: absolute; top: 400px; left: 658px;" type="number" value="1" id="secondMLValue" name="length" min="1" max="999" onchange="setMLtwo();">
                 <p style="position: absolute; top:390px; left: 740px;  z-index: 1; color: #64dd17; font-size: 15px;">ml</p> -->
 
-            <button style="position: absolute; top: 490px; left: 318px; width: 144px; font-size:13px;" onclick="restartExperiment()">Restart Experiment</button>
+            <button id="restartExpt" style="position: absolute; top: 490px; left: 318px; width: 144px; font-size:13px;" onclick="restartExperiment()">Restart Experiment</button>
 
-            <button id="goBackButton" style="position: absolute; top: 490px; left: 525px; width: 124px; font-size:13px;">Experimental Data</button>
+            <button id="goBackButton" style="position: absolute; top: 490px; left: 525px; width: 124px; font-size:13px;" >Experimental Data</button>
             <button id="obserButton" style="position: absolute; top: 490px; left: 655px; width: 124px; font-size: 13px; " onclick="showObservation()">Observations</button>
 
             <!-- Observation table! -->
@@ -374,19 +375,39 @@
         <div class="" id="observations"
             style="visibility:hidden; height: 465px; width: 760px; top:10px; left: 15px; position: absolute; background-color: #000; z-index: 1000; border:5px solid darkblue; border-radius:7.5px;">
             <h1 style="position: absolute; top: -10px; left: 215px; color: #fff;">Observations</h1>
-            <table id="observTable"
-                style="position:absolute; left:10px; top:50px; height: 400px; width: 737.5px; background-color:lightgrey;">
+             <!-- erin -->
+             <p id="noteremsel" style="z-index: 2000; position: absolute; top: 470px; left: 20px; width: 500px; font-size:13px; color: #fff;">Click on the rows which you want to delete </p>
+            <table id="observTable" style="position:absolute; left:10px; top:50px; height: 400px; width: 737.5px; background-color:lightgrey;">
+                <thead id="head">                
                 <tr style="background-color:grey;">
                     <th style="background-color:lightgrey;">Ethyle Acetate Flowrate <br>(Litre per Hour)
                     <th style="background-color:lightgrey;">NaOH Flowrate <br>(Litre per Hour)
                     <th style="background-color:lightgrey;">Conductivity <br>(milliSiemens/cm)
                 </tr>
+            </thead>
             </table>
         <button id="clearTable"
-            style="position:absolute;  left:300px; top:350px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;" onclick="clearTable()">Clear
+            style="position:absolute;  left:300px; top: 400px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;" onclick="clearTable()">Clear
             all Readings</button>
+            <button onclick="remSelRead()" id="remSelRead" style="position:absolute;  left:50px; top:400px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;">Remove Selected Readings</button>
+            <!-- <button onclick="remAllRead()" id="remAllRead" style="visibility: hidden; position: absolute; top: 400px; left: 290px; width:200px; font-size: 13px;z-index: 2500; background-color: #fff;">Clear All readings</button> -->
+            <button onclick="emailSend()" id="emailTable" style="position:absolute;  left:500px; top:400px; padding:10px; background-image: linear-gradient(to down, #FFEB99, #FED430, #E1B400, #C79F00, #a98700); width:auto; height:auto; border-radius:5px; cursor:pointer; border-color:darkgrey; z-index:2;">Email This Table</button>
+
+            <!-- erin 08092021 -->
+            <!-- Pop up to input receiver email ID -->
+            <div id="emailSend" style="visibility: hidden; height: 100px; width: 300px; top: 200px; left: 250px; position: absolute; padding: 8px; background-color: rgb(255, 255, 255); color: black; z-index: 5000;border-radius:10px ">
+                Email:
+                <input id="emailR" type="email" onchange="setemail(this.value)" name="Email" size="20" required="true" ; pattern=".@.">
+
+                <!-- <input id="sendEmail" type="submit" name="Send" value=""> -->
+                <button onclick="sendEmail()" id="sendEmail" style=" position: absolute; top: 8px; left: 230px; width: 70px; font-size: 13px;z-index: 5500; background-color: #fff; ">Send</button>
+                <p id="emailreq" style="z-index: 7500; position: absolute; height: 20px; width: 300px; top: 50px; left: 10px; font-size: 15px; color: black; ">Email is required</p>
+            </div>
+            <!-- info store for mail body -->
+            <p id="info" style="visibility: hidden;"></p>
         </div>
             </div>
+            <!-- canvas 4 end  -->
 
         <!--Trial text	-->
         <div id="">
